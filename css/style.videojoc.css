@@ -6,12 +6,71 @@ body {
     background: #f4f4f4;
 }
 
-header, footer {
-    background: #002244;
-    color: white;
+.header {
+    background: url("../img/zelda-fondo.png") no-repeat center center fixed;
+    background-size: cover;
+    padding: 60px 40px;
     text-align: center;
-    padding: 10px;
-}
+    height: 50vh;
+  }
+
+  .header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .header p {
+    font-size: 18px;
+    color: #dcdcdc;
+  }
+
+  .info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  iframe {
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+
+  .badge, .platform, .btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .badge {
+    background: orange;
+    color: #fff;
+  }
+
+  .platform {
+    background: #008cba;
+    color: #fff;
+  }
+
+  .btn {
+    background: #e91e63;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+.btn:hover {
+    background: #c2185b;
+  }
 
 .container {
     width: 90%;
@@ -20,11 +79,6 @@ header, footer {
     background: white;
     padding: 20px;
     border-radius: 8px;
-}
-
-h1 {
-    font-size: 1.5em;
-    color: #003366;
 }
 
 img {
@@ -55,4 +109,39 @@ img {
 
 a {
     color: #0066cc;
+}
+
+.container-com {
+    position: relative;
+    width: 500px; /* Ajusta según tus necesidades */
+    height: 300px; /* Ajusta según tus necesidades */
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.image-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.image-com {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.image-com.overlay {
+    clip-path: inset(0 50% 0 0); /* Muestra la mitad inicial */
+    transition: clip-path 0.2s ease;
+}
+
+.slider-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Inicialmente en el centro */
+    width: 4px; /* Ancho del divisor */
+    background-color: #fff;
+    cursor: ew-resize;
+    z-index: 3;
 }
