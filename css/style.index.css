@@ -15,13 +15,13 @@ body {
   backdrop-filter: blur(4px);
 }
 
-.btn-info {
+.btn_-info {
   background-color: #66fcf1;
   border: none;
   color: #0b0c10;
 }
 
-.btn-info:hover {
+.btn_-info:hover {
   background-color: #45a29e;
 }
 
