@@ -15,14 +15,14 @@ body {
   backdrop-filter: blur(4px);
 }
 
-.btn_-info {
+.btn-info {
   background-color: #66fcf1;
   border: none;
   color: #0b0c10;
 }
 
-.btn_-info:hover {
-  background-color: #45a29e;
+.btn-info:hover {
+  background-color: #d9eeed;
 }
 
 footer {
