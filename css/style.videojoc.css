@@ -78,6 +78,10 @@ body, html {
     max-width: 800px;
     height: 500px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .badge_, .platform_, .btn_ {
@@ -107,6 +111,12 @@ body, html {
 .btn_:hover {
     background: #c2185b;
   }
+
+
+div.game-imgs img {
+    width: 100%;
+    height: auto;
+}
 
 .container {
     width: 90%;
