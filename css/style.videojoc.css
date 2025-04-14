@@ -84,6 +84,26 @@ body, html {
     align-items: center;
   }
 
+.mucho_texto {
+    line-height: 1.5; /* Mejor separación del texto */
+    padding: 20px; /* Espaciado interno */
+    margin: auto; /* Centra el div en la pantalla */
+}
+.mucho_texto h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center; /* Título centrado */
+}
+.mucho_texto h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.mucho_texto p {
+    font-size: 24px;
+    text-align: justify; /* Texto alineado de forma uniforme */
+}
+
   .badge_, .platform_, .btn_ {
     padding: 10px 20px;
     border-radius: 8px;
