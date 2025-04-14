@@ -59,6 +59,33 @@
         <div class="game-imgs">
             <img src="../img/imagen-fifa25.avif" alt="FIFA 25">
         </div>
+        <div class="carousel-container">
+            <!-- Flecha izquierda -->
+            <button class="arrow left" onclick="changeSlide(-1)">&#8249;</button>
+            
+            <!-- Slides -->
+            <div class="carousel-slide active">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 1">
+                <div class="carousel-text">
+                    <p>La actualización de los fundamentos tácticos del juego ofrece un mayor control estratégico y un movimiento en conjunto del equipo más realista.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 2">
+                <div class="carousel-text">
+                    <p>FC IQ también utiliza un nuevo modelo de IA, basado en datos reales, para influir en las tácticas de los jugadores.</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen 3">
+                <div class="carousel-text">
+                    <p>Mediante los nuevos roles de futbolista, cada acción dentro del campo tiene un impacto estratégico.</p>
+                </div>
+            </div>
+            
+            <!-- Flecha derecha -->
+            <button class="arrow right" onclick="changeSlide(1)">&#8250;</button>
+        </div>
         <h1>Todas las copas</h1>
         <div class="tabla-imagenes">
             <!-- Fila 1 -->
@@ -105,6 +132,7 @@
             <iframe src="https://www.youtube.com/embed/o3V-GvvzjE4" allowfullscreen></iframe>
         </div>
     </div>
+    <script src="../javascript/carrousel.js"></script>
 
     <footer>
         <p>&copy; 2025 Noticias Gamer - Todos los derechos reservados</p>

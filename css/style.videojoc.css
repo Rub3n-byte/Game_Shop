@@ -229,7 +229,7 @@ a {
 }
 
 
-/* Texto de Fifa 25 */
+/* Tabla hover de Fifa 25*/
 
 /* Contenedor de la tabla */
 .tabla-imagenes {
@@ -291,4 +291,72 @@ a {
 
 .celda:hover .texto {
   opacity: 1; /* Muestra el texto */
+}
+
+/* Carrousel */
+/* Contenedor del carrusel */
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+/* Slides individuales */
+.carousel-slide {
+  display: none; /* Oculta todas las slides inicialmente */
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+.carousel-slide.active {
+  display: block; /* Muestra la slide activa */
+}
+
+/* Texto superpuesto */
+.carousel-text {
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Flechas de navegación */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background-color: #333; /* Cambio de color en hover */
 }
