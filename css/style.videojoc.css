@@ -8,6 +8,8 @@ body, html {
     height: 100%;
 }
 
+/* Header, de las imagenes de los juegos */
+
 .header.zelda {
     background: url("../img/zelda-fondo.png") no-repeat center center fixed;
     background-size: cover;
@@ -48,6 +50,8 @@ body, html {
     height: 100vh;
 }
 
+/* Configuracion general */
+
   .header h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -83,26 +87,6 @@ body, html {
     justify-content: center;
     align-items: center;
   }
-
-.mucho_texto {
-    line-height: 1.5; /* Mejor separación del texto */
-    padding: 20px; /* Espaciado interno */
-    margin: auto; /* Centra el div en la pantalla */
-}
-.mucho_texto h1 {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center; /* Título centrado */
-}
-.mucho_texto h2 {
-    font-size: 28px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-.mucho_texto p {
-    font-size: 24px;
-    text-align: justify; /* Texto alineado de forma uniforme */
-}
 
   .badge_, .platform_, .btn_ {
     padding: 10px 20px;
@@ -242,4 +226,69 @@ a {
     border-radius: 50%;
     cursor: grab;
     z-index: 10;
+}
+
+
+/* Texto de Fifa 25 */
+
+/* Contenedor de la tabla */
+.tabla-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 10px; /* Espaciado entre celdas */
+  width: 90%;
+  margin: auto;
+}
+
+/* Estilo de las celdas */
+.celda {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  /* Tamaño dinámico de la celda */
+  width: 100%; 
+  height: 400px; /* Ajusta la altura de las celdas */
+}
+
+/* Contenido interno */
+.contenido {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagen que se ajusta al tamaño del div */
+.contenido img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Se ajusta sin distorsionarse */
+  transition: transform 0.5s ease; /* Animación en hover */
+}
+
+/* Texto que se adapta al tamaño del div */
+.contenido .texto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  color: #fff; /* Color del texto */
+  font-size: 18px; /* Ajusta el tamaño del texto */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Hover para activar animación */
+.celda:hover img {
+  transform: scale(1.2); /* Zoom para crear efecto de fondo */
+}
+
+.celda:hover .texto {
+  opacity: 1; /* Muestra el texto */
 }
