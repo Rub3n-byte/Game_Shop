@@ -292,43 +292,7 @@ a {
   opacity: 1; /* Muestra el texto */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Carousel container (original settings) */
+/* Contenedor del carrusel (configuración original) */
 .carousel-container {
   position: relative;
   width: 100%;
@@ -337,91 +301,81 @@ a {
   overflow: hidden;
 }
 
-/* Carousel wrapper (slides are positioned inside) */
+/* Contenedor del carrusel (divs posicionados dentro) */
 .carousel-wrapper {
   position: relative;
   width: 100%;
 }
 
-/* Base style for all slides */
+/* Estilo base para todas los divs */
 .carousel-slide {
   position: absolute;
   margin-top: 5%;
   top: 0;
   transition: all 0.5s ease;
-  opacity: 0;
+  opacity: 0; /* Ocultar por defecto, cambia si es activo, anterior o siguiente */
 }
 
-/* Previous slide: occupies left 20% reduced by a 10px gap on its right */
+/* Div anterior, a la izquierda */
 .carousel-slide.previous {
   background-color: #323232;
   color: #FAFAFA;
   left: 0;
-  width: 16%;
+  width: 16%; /* Ocupa el 20% de la pantalla, a la izquierda, reducido a 16% por el espacio */
   opacity: 1;
-  z-index: 1;
-  transform: scale(1); /* Normal size */
+  z-index: 1; /* Para que este debajo del activo */
+  transform: scale(1);
 }
 
-/* Active slide: occupies center 60% reduced by 20px total for side gaps,
-   positioned with an extra 10px offset to the right to account for the gap;
-   its content is scaled to 125% */
+/* Div activo, en el centro */
 .carousel-slide.active {
   background-color: #323232;
   color: #FAFAFA;
-  left: 26%;
-  width: 48%;
+  left: 26%; /* Para centrar el div */
+  width: 48%; /* Porque es el activo */
   opacity: 1;
-  z-index: 2;
-  transform: scale(1.25);
-  transform-origin: center;
+  z-index: 2; /* Para que esté por encima de los demás */
+  transform: scale(1.25); /* Aumentar el tamaño del div porque esta activo (ver js) */
+  transform-origin: center; /* Para que el aumento sea desde el centro */
 }
 
-/* Next slide: occupies right 20% reduced by a 10px gap on its left */
+/* Div siguiente, a la derecha */
 .carousel-slide.next {
   background-color: #323232;
   color: #FAFAFA;
   right: 0%;
   width: 16%;
   opacity: 1;
-  z-index: 1;
+  z-index: 1; /* Para que este debajo del activo */
   transform: scale(1);
 }
 
-/* Hide any slide that isn’t previous, active, or next */
+/* Ocultar cualquier diapositiva que no sea anterior, activa o siguiente */
 .carousel-slide:not(.active):not(.previous):not(.next) {
-  opacity: 0;
+  opacity: 0; /* Ocultar los divs que no esten activo, anteriores o siguientes, para rendundar */
 }
 
-/* Image styling */
 .carousel-slide img {
   width: 100%;
-  /* Increase the max-height proportionally (125% of 250px ≈ 312px) */
   max-height: 312px;
   border-radius: 10px;
 }
 
-/* Carousel text styling */
-.carousel-text {
-  padding: 10px;
-}
-
-/* Increase the text size (approximately 125%) */
+/* Incrementar el tamaño del texto (aproximadamente 125%) */
 .carousel-slide.active .carousel-text {
-  font-size: 1.25em;
+  font-size: 1.25em; 
 }
 
-/* Dot indicators: Centered below the active slide */
+/* Indicadores de div activo */
 .carousel-indicators {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
   display: flex;
   gap: 8px;
 }
 
-/* Dot styling */
+/* Estilo de los puntos indicadores */
 .dot {
   width: 12px;
   height: 12px;
@@ -434,7 +388,7 @@ a {
   background: #717171;
 }
 
-/* Navigation arrows */
+/* Flechas de navegación */
 .arrow {
   position: absolute;
   top: 50%;
