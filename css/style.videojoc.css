@@ -312,8 +312,8 @@ a {
   position: absolute;
   margin-top: 5%;
   top: 0;
-  transition: all 0.5s ease;
   opacity: 0; /* Ocultar por defecto, cambia si es activo, anterior o siguiente */
+  transition: all 0.5s ease-out;
 }
 
 /* Div anterior, a la izquierda */
