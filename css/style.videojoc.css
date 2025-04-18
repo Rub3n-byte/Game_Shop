@@ -69,6 +69,18 @@ body, html {
     gap: 30px;
     flex-wrap: wrap;
   }
+  .platforma {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .platform-icon {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+  }
 
   h2 {
     margin-bottom: 20px;
@@ -414,4 +426,47 @@ a {
 
 .arrow:hover {
   background-color: #333;
+}
+
+
+
+/* Base style for each card */
+.campaign, .multiplayer, .zombies {
+  background-color: #323232;
+  color: #fff;
+  width: 250px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow-y: auto;
+  cursor: pointer;
+}
+/* Hover: the box grows and the shadow deepens */
+.campaign:hover, .multiplayer:hover, .zombies:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+/* Headings inside each card */
+.campaign h2, .multiplayer h2, .zombies h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+/* Paragraph styling inside each card */
+.campaign p, .multiplayer p, .zombies p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+
+.container_ {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
 }
