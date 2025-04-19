@@ -468,13 +468,13 @@ a {
 
 /* Imágenes de fondo */
 .campaign {
-  background: url("../img/cam.jpeg") no-repeat center/cover;
+  background: url("../img/cam1.jpeg") no-repeat center/cover;
 }
 .multiplayer {
-  background: url("../img/mp.jpeg") no-repeat center/cover;
+  background: url("../img/mp1.jpeg") no-repeat center/cover;
 }
 .zombies {
-  background: url("../img/zom.jpg") no-repeat center/cover;
+  background: url("../img/zom1.jpg") no-repeat center/cover;
 }
 
 /* Estilo del contenido dentro de cada tarjeta */
@@ -501,4 +501,14 @@ a {
 /* Al pasar el cursor, revelar el párrafo */
 .container_ > div:hover .content p {
   opacity: 1;
+}
+
+.extra-contents div {
+  display: none;  /* Hidden until a card is clicked */
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
 }
