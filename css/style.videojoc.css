@@ -151,6 +151,8 @@ div.game-imgs img {
     padding: 20px;
     border-radius: 8px;
     display: grid;
+    background-color: #222;
+    color: #fff;
 }
 
 .video-container {
@@ -460,7 +462,7 @@ a {
 /* Estilos base para cada tarjeta */
 .container_ > div {
   width: 33%;
-  height: 100%;
+  height: 70%;
   background-color: #323232;
   border-radius: 8px;
   box-shadow: 1px 5px 15px #1e0e3e;
