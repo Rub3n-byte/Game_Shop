@@ -29,3 +29,25 @@ footer {
   background-color: #0b0c10;
   font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .card-img-overlay {
+    padding: 0.75rem;
+  }
+
+  .btn-info {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    flex-direction: column;
+    padding: 1.2rem 1rem;
+  }
+}
