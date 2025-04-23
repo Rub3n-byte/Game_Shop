@@ -20,3 +20,9 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../img/fondo.png) 50% 80% no-repeat fixed;
+    }
+}
