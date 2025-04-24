@@ -1,53 +1,53 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto para todo el cuerpo del documento */
+  background-color: #f4f4f4; /* Color de fondo gris claro */
 }
 
 .hero {
-  background-image: linear-gradient(135deg, #0b0c10, #1f2833);
+  background-image: linear-gradient(135deg, #0b0c10, #1f2833); /* Fondo con degradado en diagonal del hero */
 }
 
 .card-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif; /* Fuente futurista para los títulos de tarjetas */
 }
 
 .card-img-overlay {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /* Aplica desenfoque al fondo de la superposición de imagen */
 }
 
 .btn-info {
-  background-color: #66fcf1;
-  border: none;
-  color: #0b0c10;
+  background-color: #66fcf1; /* Color celeste para el botón */
+  border: none; /* Elimina el borde del botón */
+  color: #0b0c10; /* Texto en color oscuro */
 }
 
 .btn-info:hover {
-  background-color: #d9eeed;
+  background-color: #d9eeed; /* Color más claro al pasar el mouse sobre el botón */
 }
 
 footer {
-  background-color: #0b0c10;
-  font-size: 0.9rem;
+  background-color: #0b0c10; /* Fondo oscuro para el pie de página */
+  font-size: 0.9rem; /* Tamaño de fuente ligeramente reducido */
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 3rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 3rem 1.5rem; /* Ajuste de espaciado en móviles */
+    font-size: 0.95rem; /* Tamaño de fuente adaptado para pantallas pequeñas */
   }
 
   .card-img-overlay {
-    padding: 0.75rem;
+    padding: 0.75rem; /* Reduce el relleno interno en pantallas pequeñas */
   }
 
   .btn-info {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1rem; /* Espaciado interno del botón en pantallas pequeñas */
+    font-size: 0.9rem; /* Tamaño de texto ajustado */
   }
 
   footer {
-    font-size: 0.8rem;
-    flex-direction: column;
-    padding: 1.2rem 1rem;
+    font-size: 0.8rem; /* Reduce el tamaño de fuente del footer en móviles */
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    padding: 1.2rem 1rem; /* Añade relleno alrededor del contenido del footer */
   }
 }
