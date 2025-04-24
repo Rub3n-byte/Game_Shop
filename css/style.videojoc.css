@@ -1,582 +1,616 @@
-/* styles.css */
+/* Estilos generales para todo el documento */
 body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+  font-family: Arial, sans-serif; /* Fuente predeterminada */
+  margin: 0; /* Quita el margen por defecto del navegador */
+  padding: 0; /* Quita el padding por defecto del navegador */
+  width: 100%; /* Ocupa el 100% del ancho disponible */
+  height: 100%; /* Ocupa el 100% de la altura disponible */
 }
 
+/* Estilo base del contenedor de encabezado */
 .header {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
+  display: flex; /* Usa Flexbox para la disposición de los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-content: center; /* Centra el contenido en el eje transversal */
+  justify-content: center; /* Centra el contenido en el eje principal */
 }
 
-/* Header, de las imagenes de los juegos */
+/* Estilos específicos para el header según el juego, con fondo personalizado */
 
 .header.zelda {
-    background: url("../img/zelda-fondo.png") no-repeat center center fixed;
-    background-size: cover;
-    padding: 90px 40px;
-    text-align: center;
-    height: 100vh;
+  background: url("../img/zelda-fondo.png") no-repeat center center fixed; /* Imagen de fondo centrada y fija */
+  background-size: cover; /* La imagen cubre todo el espacio del header */
+  padding: 90px 40px; /* Espaciado interior */
+  text-align: center; /* Centra el texto */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
 }
 
 .header.mario {
-    background: url("../img/fondo-mario.webp") no-repeat center center fixed;
-    background-size: cover;
-    padding: 90px 40px;
-    text-align: center;
-    height: 100vh;
+  background: url("../img/fondo-mario.webp") no-repeat center center fixed;
+  background-size: cover;
+  padding: 90px 40px;
+  text-align: center;
+  height: 100vh;
 }
 
 .header.fifa {
-    background: url("../img/fondo-EA-FC25.jpg") no-repeat center center fixed;
-    background-size: cover;
-    padding: 90px 40px;
-    text-align: center;
-    height: 100vh;
+  background: url("../img/fondo-EA-FC25.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 90px 40px;
+  text-align: center;
+  height: 100vh;
 }
 
 .header.cod {
-    background: url("../img/fondo-cod2.jpeg") no-repeat center center fixed;
-    background-size: cover;
-    padding: 90px 40px;
-    text-align: center;
-    height: 100vh;
+  background: url("../img/fondo-cod2.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 90px 40px;
+  text-align: center;
+  height: 100vh;
 }
 
 .header.gta {
-    background: url("../img/fondo-gta.jpg") no-repeat center center fixed;
-    background-size: cover;
-    padding: 90px 40px;
-    text-align: center;
-    height: 100vh;
-}
-
-/* Configuracion general */
-
-  .header h1 {
-    font-size: 72px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-
-  .header p {
-    font-size: 36px;
-    color: grey;
-    font-weight: bold;
-  }
-
-  .info {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  .platforma {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-
-  }
-  .platform-icon {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-  }
-
-  iframe {
-    border: none;
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .badge_, .platform_, .btn_ {
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-  }
-
-  .badge_ {
-    background: orange;
-    color: #fff;
-  }
-
-  .platform_ {
-    background: #008cba;
-    color: #fff;
-  }
-
-  .btn_ {
-    background: #e91e63;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s;
-    text-decoration: none;
-  }
-
-.btn_:hover {
-    background: #c2185b;
-  }
-
-
-div.game-imgs img {
-    width: 90%;
-    height: auto;
-}
-
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    display: grid;
-    background-color: #222;
-    color: #fff;
-}
-div.container > p {
-    text-justify: auto;
-    text-align: justify;
-    margin: 0;
-    padding: 0;
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.game-imgs {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.game-imgs img {
-    width: 50%;
-}
-
-.video {
-    background: #ccc;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    margin: 20px 0;
-    border-radius: 8px;
-    color: #333;
-}
-
-a {
-    color: #0066cc;
-}
-
-/* Cosas de comparación del zelda */
-.container-com {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-}
-
-/* Contenedor de imágenes */
-.image-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.slider-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.image-after {
-    clip-path: inset(0 50% 0 0);
-}
-
-/* Input Slider (invisible pero funcional) */
-.slider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-/* Línea del slider */
-.slider-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%; /* Centrado al inicio */
-    width: 4px;
-    background-color: #fff;
-    z-index: 5;
-}
-
-/* Bolita del slider (manejador visual) */
-.slider-handle {
-    position: absolute;
-    top: 50%;
-    left: 50%; /* Centrado al inicio */
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: #000;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    cursor: grab;
-    z-index: 10;
-}
-
-
-/* Tabla hover de EA FC25*/
-
-/* Contenedor de la tabla */
-.tabla-imagenes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-  gap: 10px; /* Espaciado entre celdas */
-  width: 90%;
-  margin: auto;
-}
-
-/* Estilo de las celdas */
-.celda {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  /* Tamaño dinámico de la celda */
-  width: 100%; 
-  height: 400px; /* Ajusta la altura de las celdas */
-}
-
-/* Contenido interno */
-.contenido {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* Imagen que se ajusta al tamaño del div */
-.contenido img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Se ajusta sin distorsionarse */
-  transition: transform 0.5s ease; /* Animación en hover */
-}
-
-/* Texto que se adapta al tamaño del div */
-.contenido .texto {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center; /* Centra el texto verticalmente */
-  justify-content: center; /* Centra el texto horizontalmente */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  color: #fff; /* Color del texto */
-  font-size: 18px; /* Ajusta el tamaño del texto */
+  background: url("../img/fondo-gta.jpg") no-repeat center center fixed;
+  background-size: cover;
+  padding: 90px 40px;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  height: 100vh;
 }
 
-/* Hover para activar animación */
-.celda:hover img {
-  transform: scale(1.2); /* Zoom para crear efecto de fondo */
+/* Configuración general de textos en el header */
+.header h1 {
+  font-size: 72px; /* Tamaño del título */
+  margin-bottom: 10px; /* Espaciado inferior */
+  font-weight: bold; /* Texto en negrita */
 }
 
-.celda:hover .texto {
-  opacity: 1; /* Muestra el texto */
+.header p {
+  font-size: 36px; /* Tamaño del subtítulo */
+  color: grey; /* Color gris */
+  font-weight: bold;
 }
 
-/* Contenedor del carrusel (configuración original) */
-.carousel-container {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  height: 600px;
-  overflow: hidden;
-}
-
-/* Contenedor del carrusel (divs posicionados dentro) */
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-/* Estilo base para todas los divs */
-.carousel-slide {
-  position: absolute;
-  margin-top: 5%;
-  top: 0;
-  opacity: 0; /* Ocultar por defecto, cambia si es activo, anterior o siguiente */
-  transition: all 0.5s ease-out;
-}
-
-/* Div anterior, a la izquierda */
-.carousel-slide.previous {
-  background-color: #323232;
-  color: #FAFAFA;
-  left: 0;
-  width: 16%; /* Ocupa el 20% de la pantalla, a la izquierda, reducido a 16% por el espacio */
-  opacity: 1;
-  z-index: 1; /* Para que este debajo del activo */
-  transform: scale(1);
-}
-
-/* Div activo, en el centro */
-.carousel-slide.active {
-  background-color: #323232;
-  color: #FAFAFA;
-  left: 26%; /* Para centrar el div */
-  width: 48%; /* Porque es el activo */
-  opacity: 1;
-  z-index: 2; /* Para que esté por encima de los demás */
-  transform: scale(1.25); /* Aumentar el tamaño del div porque esta activo (ver js) */
-  transform-origin: center; /* Para que el aumento sea desde el centro */
-}
-
-/* Div siguiente, a la derecha */
-.carousel-slide.next {
-  background-color: #323232;
-  color: #FAFAFA;
-  right: 0%;
-  width: 16%;
-  opacity: 1;
-  z-index: 1; /* Para que este debajo del activo */
-  transform: scale(1);
-}
-
-/* Ocultar cualquier diapositiva que no sea anterior, activa o siguiente */
-.carousel-slide:not(.active):not(.previous):not(.next) {
-  opacity: 0; /* Ocultar los divs que no esten activo, anteriores o siguientes, para rendundar */
-}
-
-.carousel-slide img {
-  width: 100%;
-  max-height: 312px;
-  border-radius: 10px;
-}
-
-/* Incrementar el tamaño del texto (aproximadamente 125%) */
-.carousel-slide.active .carousel-text {
-  font-size: 1.25em; 
-}
-
-/* Indicadores de div activo */
-.carousel-indicators {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
+/* Estilo del contenedor de información (edad, botón) */
+.info {
+  margin-top: 30px;
   display: flex;
-  gap: 8px;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  gap: 30px; /* Espacio entre elementos */
+  flex-wrap: wrap; /* Permite envolver los elementos si no caben */
 }
 
-/* Estilo de los puntos indicadores */
-.dot {
-  width: 12px;
-  height: 12px;
-  background: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
+/* Estilo para el contenedor de plataformas */
+.platforma {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.dot.active {
-  background: #717171;
+/* Icono de la plataforma (ej. logo de Switch) */
+.platform-icon {
+  width: 150px;
+  height: auto;
+  border-radius: 50%; /* Borde circular */
 }
 
-/* Flechas de navegación */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  z-index: 3;
+/* Estilo general de subtítulos */
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
-.arrow:hover {
-  background-color: #333;
-}
-
-
-
-/* Contenedor externo: define la vista del carrusel */
-.container {
-  width: 100%;
-  margin: 0 auto;
-  overflow: visible;  /* Permitir que las tarjetas ampliadas se superpongan */
-  padding: 20px 0;    /* Opcional: agrega espacio arriba y abajo */
-}
-
-/* Contenedor flexible que contiene las tarjetas - ahora ajustado a ancho completo y 600px de altura */
-.container_ {
+/* Estilo del iframe (vídeo de YouTube) */
+iframe {
+  border: none; /* Quita el borde */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 800px; /* Máximo ancho */
+  height: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Sombra suave */
+  border-radius: 16px; /* Bordes redondeados */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 600px;    /* Nuevo: establece la altura a 600px */
 }
 
-/* Estilos base para cada tarjeta */
-.container_ > div {
-  width: 33%;
-  height: 70%;
-  background-color: #323232;
+/* Botones y distintivos personalizados */
+.badge_, .platform_, .btn_ {
+  padding: 10px 20px;
   border-radius: 8px;
-  box-shadow: 1px 5px 15px #1e0e3e;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.5s ease;
+  font-weight: bold;
+}
+
+/* Distintivo de edad */
+.badge_ {
+  background: orange;
+  color: #fff;
+}
+
+/* Botón de plataforma (si se usara) */
+.platform_ {
+  background: #008cba;
+  color: #fff;
+}
+
+/* Botón de compra */
+.btn_ {
+  background: #e91e63;
+  color: white;
   cursor: pointer;
+  transition: background 0.3s; /* Suaviza el cambio de color al pasar el ratón */
+  text-decoration: none;
 }
 
-/* Efecto hover: Escalar la tarjeta al 125% y traerla por encima de otras */
-.container_ > div:hover {
-  transform: scale(1.25);
-  z-index: 10;
+/* Hover del botón de compra */
+.btn_:hover {
+  background: #c2185b;
 }
 
-/* Imágenes de fondo */
-.campaign {
-  background: url("../img/cam1.jpeg") no-repeat center/cover;
-}
-.multiplayer {
-  background: url("../img/mp1.jpeg") no-repeat center/cover;
-}
-.zombies {
-  background: url("../img/zom1.jpg") no-repeat center/cover;
+/* Imagen principal del juego */
+div.game-imgs img {
+  width: 90%;
+  height: auto;
 }
 
-/* Estilo del contenido dentro de cada tarjeta */
-.content {
-  padding: 15px;
-  color: #fff;
-}
-
-/* Título siempre visible */
-.content h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Párrafo oculto inicialmente */
-.content p {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-/* Al pasar el cursor, revelar el párrafo */
-.container_ > div:hover .content p {
-  opacity: 1;
-}
-
-.extra-contents div {
-  display: none;  /* Hidden until a card is clicked */
-  background: #222;
-  color: #fff;
-  border-radius: 8px;
-  width: 100%;
+/* Contenedor del contenido principal */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto; /* Centrado horizontal con margen vertical */
+  background: white;
   padding: 20px;
-  margin: 20px;
+  border-radius: 8px;
+  display: grid;
+  background-color: #222; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
 }
 
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+/* Párrafos dentro del contenedor principal */
+div.container > p {
+  text-justify: auto;
+  text-align: justify; /* Justifica el texto */
   margin: 0;
   padding: 0;
 }
 
-.celda {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  flex: 1 1 calc(33.33% - 20px); /* Adjust width for 3 items per row with gap */
-  max-width: calc(33.33% - 20px);
+/* Contenedor para el vídeo */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
+/* Estilo para todas las imágenes */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Contenedor de imágenes del juego */
+.game-imgs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Imagen individual dentro del contenedor de imágenes */
+.game-imgs img {
+  width: 50%;
+}
+/* Estilo para una sección de video simulada */
+.video {
+  background: #ccc;
+  height: 200px;
+  text-align: center;
+  line-height: 200px; /* Centrado vertical con línea de altura */
+  margin: 20px 0;
+  border-radius: 8px;
+  color: #333;
+}
+
+/* Enlaces en general */
+a {
+  color: #0066cc;
+}
+
+/* ===== Comparador de imágenes estilo Zelda ===== */
+
+/* Contenedor general de la comparación */
+.container-com {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+/* Contenedor que aloja ambas imágenes */
+.image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagen base del slider (ambas usan esta clase) */
+.slider-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagen de "después", mostrada solo parcialmente al inicio */
+.image-after {
+  clip-path: inset(0 50% 0 0); /* Muestra solo la mitad izquierda */
+}
+
+/* Input tipo range invisible para el slider */
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* Línea blanca que divide las imágenes en el comparador */
+.slider-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #fff;
+  z-index: 5;
+}
+
+/* Manejador del slider (la bolita que puedes arrastrar) */
+.slider-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: grab;
+  z-index: 10;
+}
+
+/* ===== Tabla con efecto hover para EA FC25 ===== */
+
+/* Contenedor general en forma de grid para las imágenes */
+.tabla-imagenes {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+gap: 10px;
+width: 90%;
+margin: auto;
+}
+
+/* Cada celda de imagen */
+.celda {
+position: relative;
+overflow: hidden;
+border: 1px solid #ddd;
+border-radius: 5px;
+width: 100%;
+height: 400px;
+}
+
+/* Contenido de la celda */
+.contenido {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+/* Imagen que llena el contenedor */
+.contenido img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+
+/* Texto centrado, invisible inicialmente */
+.contenido .texto {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+font-size: 18px;
+text-align: center;
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+
+/* Efecto hover: zoom de la imagen y aparición del texto */
+.celda:hover img {
+transform: scale(1.2);
+}
+
+.celda:hover .texto {
+opacity: 1;
+}
+
+/* ===== Carrusel de contenido con efecto de tarjetas ===== */
+
+/* Contenedor principal del carrusel */
+.carousel-container {
+position: relative;
+width: 100%;
+margin: auto;
+height: 600px;
+overflow: hidden;
+}
+
+/* Contenedor de las tarjetas del carrusel */
+.carousel-wrapper {
+position: relative;
+width: 100%;
+}
+
+/* Base de cada tarjeta del carrusel */
+.carousel-slide {
+position: absolute;
+margin-top: 5%;
+top: 0;
+opacity: 0;
+transition: all 0.5s ease-out;
+}
+
+/* Tarjeta anterior */
+.carousel-slide.previous {
+background-color: #323232;
+color: #FAFAFA;
+left: 0;
+width: 16%;
+opacity: 1;
+z-index: 1;
+transform: scale(1);
+}
+
+/* Tarjeta activa (centrada y ampliada) */
+.carousel-slide.active {
+background-color: #323232;
+color: #FAFAFA;
+left: 26%;
+width: 48%;
+opacity: 1;
+z-index: 2;
+transform: scale(1.25);
+transform-origin: center;
+}
+
+/* Tarjeta siguiente */
+.carousel-slide.next {
+background-color: #323232;
+color: #FAFAFA;
+right: 0%;
+width: 16%;
+opacity: 1;
+z-index: 1;
+transform: scale(1);
+}
+
+/* Ocultar tarjetas no visibles */
+.carousel-slide:not(.active):not(.previous):not(.next) {
+opacity: 0;
+}
+
+/* Imágenes dentro de cada tarjeta */
+.carousel-slide img {
+width: 100%;
+max-height: 312px;
+border-radius: 10px;
+}
+
+/* Texto dentro de la tarjeta activa */
+.carousel-slide.active .carousel-text {
+font-size: 1.25em;
+}
+
+/* Indicadores del carrusel (puntos) */
+.carousel-indicators {
+position: absolute;
+bottom: 20px;
+left: 50%;
+display: flex;
+gap: 8px;
+}
+
+/* Puntos indicadores */
+.dot {
+width: 12px;
+height: 12px;
+background: #bbb;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.dot.active {
+background: #717171;
+}
+
+/* Flechas de navegación del carrusel */
+.arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: #000;
+color: #fff;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+width: 40px;
+height: 40px;
+font-size: 20px;
+z-index: 3;
+}
+
+.arrow.left {
+left: 10px;
+}
+
+.arrow.right {
+right: 10px;
+}
+
+.arrow:hover {
+background-color: #333;
+}
+
+/* ===== Tarjetas interactivas tipo sección COD ===== */
+
+/* Contenedor externo con padding */
+.container {
+width: 100%;
+margin: 0 auto;
+overflow: visible;
+padding: 20px 0;
+}
+
+/* Contenedor flex para las tarjetas */
+.container_ {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 600px;
+}
+
+/* Cada tarjeta individual */
+.container_ > div {
+width: 33%;
+height: 70%;
+background-color: #323232;
+border-radius: 8px;
+box-shadow: 1px 5px 15px #1e0e3e;
+position: relative;
+overflow: hidden;
+transition: transform 0.5s ease;
+cursor: pointer;
+}
+
+/* Escalar al hacer hover */
+.container_ > div:hover {
+transform: scale(1.25);
+z-index: 10;
+}
+
+/* Imágenes de fondo de cada tarjeta */
+.campaign {
+background: url("../img/cam1.jpeg") no-repeat center/cover;
+}
+.multiplayer {
+background: url("../img/mp1.jpeg") no-repeat center/cover;
+}
+.zombies {
+background: url("../img/zom1.jpg") no-repeat center/cover;
+}
+
+/* Contenido textual dentro de las tarjetas */
+.content {
+padding: 15px;
+color: #fff;
+}
+
+/* Título siempre visible */
+.content h2 {
+text-align: center;
+font-size: 1.8rem;
+margin-bottom: 0.5rem;
+}
+
+/* Texto oculto al inicio */
+.content p {
+opacity: 0;
+transition: opacity 0.5s ease;
+text-align: center;
+margin-top: 0.5rem;
+}
+
+/* Mostrar texto al hacer hover */
+.container_ > div:hover .content p {
+opacity: 1;
+}
+
+/* Contenido adicional oculto hasta que se haga clic en una tarjeta */
+.extra-contents div {
+display: none;
+background: #222;
+color: #fff;
+border-radius: 8px;
+width: 100%;
+padding: 20px;
+margin: 20px;
+}
+
+/* Galería de imágenes */
+.galeria {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+margin: 0;
+padding: 0;
+}
+
+/* Redefinición de celda para galería (puede sobrescribir .celda de arriba) */
+.celda {
+background-color: #f9f9f9;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+flex: 1 1 calc(33.33% - 20px);
+max-width: calc(33.33% - 20px);
+}
+/* Imágenes dentro del contenedor .contenido ocupan todo el ancho */
 .contenido img {
   width: 100%;
 }
 
+/* Mantener el orden visual en celdas específicas (útil en Flex/Grid) */
 .celda:nth-child(4) {
-  order: 4; /* Maintain the same visual order */
+  order: 4;
 }
 
 .celda:nth-child(5) {
-  order: 5; /* Maintain the same visual order */
+  order: 5;
 }
 
+/* Estilos para pantallas pequeñas (menos de 768px) */
 @media (max-width: 768px) {
+
+  /* El header se adapta en vertical con más espacio */
   .header {
     padding: 40px 20px;
     flex-direction: column;
     flex-wrap: nowrap;
   }
 
+  /* Iconos de plataforma reducen su tamaño */
   .platform-icon {
     width: 100px;
   }
 
+  /* Contenedor con menos padding y ancho casi completo */
   .container {
     padding: 10px;
     width: 95%;
   }
 
+  /* Contenedores secundarios y sus hijos se apilan en columna */
   .container_,
   .container_ > div {
     flex-direction: column;
@@ -584,57 +618,69 @@ a {
     width: 100%;
   }
 
+  /* Ajuste de margen y transformación para móvil */
   .container_ > div {
     width: 100%;
     margin: 10px auto;
     transform: none !important;
   }
 
+  /* Descripciones visibles siempre en móvil */
   .content p {
-    opacity: 1; /* Mostrar descripción siempre en móvil */
+    opacity: 1;
   }
 
+  /* Altura reducida para iframes */
   iframe {
     height: 300px;
   }
 
+  /* Ajuste de altura en contenedor de video */
   .video {
     height: 150px;
     line-height: 150px;
   }
 
+  /* Iframe dentro del contenedor de video se adapta al ancho */
   .video-container iframe {
     max-width: 100%;
     height: auto;
   }
 
+  /* Las imágenes del juego se muestran en columna con separación */
   .game-imgs {
     flex-direction: column;
     gap: 10px;
   }
 
+  /* Imágenes de juegos ocupan todo el ancho */
   .game-imgs img {
     width: 100%;
   }
 
+  /* La tabla de imágenes se muestra como una sola columna */
   .tabla-imagenes {
     grid-template-columns: 1fr;
     gap: 15px;
   }
 
+  /* Cada celda ocupa todo el ancho */
   .celda {
     flex: 1 1 100%;
     max-width: 100%;
   }
 
+  /* Las imágenes se ajustan dentro del contenedor sin recorte */
   .contenido img {
     object-fit: contain;
   }
 
+  /* Contenedor del carrusel se ajusta automáticamente */
   .carousel-container {
     height: auto;
   }
 
+  /* Cada slide ocupa todo el ancho, sin transformación */
   .carousel-slide {
     position: relative;
     opacity: 1;
@@ -643,24 +689,29 @@ a {
     margin: 20px 0;
   }
 
+  /* Ocultar slides que no son activas ni adyacentes */
   .carousel-slide:not(.active):not(.previous):not(.next) {
     display: none;
   }
 
+  /* Slide activo ocupa todo el espacio horizontal */
   .carousel-slide.active {
     left: 0;
     width: 100%;
   }
 
+  /* Ocultar slides anteriores y siguientes en móvil */
   .carousel-slide.previous,
   .carousel-slide.next {
     display: none;
   }
 
+  /* Imágenes del carrusel limitan su altura */
   .carousel-slide img {
     max-height: 200px;
   }
 
+  /* Indicadores del carrusel se acomodan con espacio y centrado */
   .carousel-indicators {
     flex-wrap: wrap;
     gap: 4px;
@@ -669,25 +720,30 @@ a {
     transform: translateX(-50%);
   }
 
+  /* Tamaño de texto del carrusel reducido para móvil */
   .carousel-slide.active .carousel-text {
     font-size: 1rem;
   }
 
+  /* Flechas del carrusel más pequeñas */
   .arrow {
     width: 30px;
     height: 30px;
     font-size: 16px;
   }
 
+  /* Tamaño reducido para el control deslizante */
   .slider-handle {
     width: 16px;
     height: 16px;
   }
 
+  /* Línea del control deslizante más delgada */
   .slider-line {
     width: 2px;
   }
 
+  /* Botones, badges y plataformas más pequeños y con menos padding */
   .btn_,
   .badge_,
   .platform_ {
@@ -695,39 +751,45 @@ a {
     font-size: 0.9rem;
   }
 
+  /* Galería se muestra en columna con altura fija */
   .galeria {
     flex-direction: column;
     flex-wrap: nowrap;
     height: 1400px;
-
   }
 
+  /* Contenidos extra centrados y con buen margen */
   .extra-contents div {
     width: 90%;
     margin: 10px auto;
   }
 }
 
+/* Anchos máximos para contenedores en resoluciones específicas (usado en Bootstrap) */
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1320px;
   }
 }
+
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1140px;
   }
 }
+
 @media (min-width: 992px) {
   .container, .container-lg, .container-md, .container-sm {
       max-width: 100%;
   }
 }
+
 @media (min-width: 768px) {
   .container, .container-md, .container-sm {
       max-width: 100%;
   }
 }
+
 @media (min-width: 576px) {
   .container, .container-sm {
       max-width: 100%;
