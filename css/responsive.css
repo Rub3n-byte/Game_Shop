@@ -1,0 +1,147 @@
+@media (max-width: 768px) {
+    .header {
+      padding: 40px 20px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  
+    .platform-icon {
+      width: 100px;
+    }
+  
+    .container {
+      padding: 10px;
+      width: 95%;
+    }
+  
+    .container_,
+    .container_ > div {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+    }
+  
+    .container_ > div {
+      width: 100%;
+      margin: 10px auto;
+      transform: none !important;
+    }
+  
+    .content p {
+      opacity: 1; /* Mostrar descripción siempre en móvil */
+    }
+  
+    iframe {
+      height: 300px;
+    }
+  
+    .video {
+      height: 150px;
+      line-height: 150px;
+    }
+  
+    .video-container iframe {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .game-imgs {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .game-imgs img {
+      width: 100%;
+    }
+  
+    .tabla-imagenes {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .celda {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .contenido img {
+      object-fit: contain;
+    }
+  
+    .carousel-container {
+      height: auto;
+    }
+  
+    .carousel-slide {
+      position: relative;
+      opacity: 1;
+      width: 100%;
+      transform: none !important;
+      margin: 20px 0;
+    }
+  
+    .carousel-slide:not(.active):not(.previous):not(.next) {
+      display: none;
+    }
+  
+    .carousel-slide.active {
+      left: 0;
+      width: 100%;
+    }
+  
+    .carousel-slide.previous,
+    .carousel-slide.next {
+      display: none;
+    }
+  
+    .carousel-slide img {
+      max-height: 200px;
+    }
+  
+    .carousel-indicators {
+      flex-wrap: wrap;
+      gap: 4px;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .carousel-slide.active .carousel-text {
+      font-size: 1rem;
+    }
+  
+    .arrow {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  
+    .slider-handle {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .slider-line {
+      width: 2px;
+    }
+  
+    .btn_,
+    .badge_,
+    .platform_ {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  
+    .galeria {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 1400px;
+  
+    }
+  
+    .extra-contents div {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+  

@@ -1,0 +1,58 @@
+/* Cosas de comparación del zelda */
+.container-com {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+/* Contenedor de imágenes */
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.image-after {
+    clip-path: inset(0 50% 0 0);
+}
+
+/* Input Slider (invisible pero funcional) */
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+/* Línea del slider */
+.slider-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Centrado al inicio */
+    width: 4px;
+    background-color: #fff;
+    z-index: 5;
+}
+
+/* Bolita del slider (manejador visual) */
+.slider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Centrado al inicio */
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: grab;
+    z-index: 10;
+}
