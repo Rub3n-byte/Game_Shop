@@ -26,28 +26,30 @@
       font-family: 'The Wild Breath of Zelda';
     }
 
-    /* Diseño en grid para la sección principal del cuerpo */
-    .semibody {
-      display: grid;
-      grid-template-columns: 15% 70% 15%; /* Distribución de las columnas */
-      padding: 40px 0; /* Espaciado vertical interno */
-      grid-gap: 0; /* Sin espacio entre columnas */
-    }
-    /* Estilo para los contenedores laterales */
-    .lados {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    /* Imagen de fondo en la columna izquierda */
-    .d_izquierda {
-      background: url('../img/izquierda.jpg') no-repeat center center;
-      background-size: contain;
-      background-attachment: fixed; /* Imagen fija al fondo */
-    }
-    /* Imagen de fondo en la columna derecha */
-    .d_derecha {
-      background: url('../img/derecha.webp') no-repeat center center;
-      background-size: contain;
+    @media screen and (width: 1920px) and (height: 1080px) {
+      /* Diseño en grid para la sección principal del cuerpo */
+      .semibody {
+        display: grid;
+        grid-template-columns: 15% 70% 15%; /* Distribución de las columnas */
+        padding: 40px 0; /* Espaciado vertical interno */
+        grid-gap: 0; /* Sin espacio entre columnas */
+      }
+      /* Estilo para los contenedores laterales */
+      .lados {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      /* Imagen de fondo en la columna izquierda */
+      .d_izquierda {
+        background: url('../img/izquierda.jpg') no-repeat center center;
+        background-size: contain;
+        background-attachment: fixed; /* Imagen fija al fondo */
+      }
+      /* Imagen de fondo en la columna derecha */
+      .d_derecha {
+        background: url('../img/derecha.webp') no-repeat center center;
+        background-size: contain;
+      }
     }
   </style>
 </head>
