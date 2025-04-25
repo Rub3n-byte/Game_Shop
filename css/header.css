@@ -1,0 +1,54 @@
+.header_ {
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
+    top: 0;
+    left: 0;
+    width: 100%; /* Abarca todo el ancho de la pantalla */
+}
+
+img.icon {
+    border-radius: 50%; /* Hace que la imagen tenga forma circular */
+    width: 50px;
+    height: 50px; /* Define dimensiones fijas para el icono */
+}
+
+.megamenu {
+    display: fixed; /* Cambia a display fixed para que el menú se mantenga visible al hacer scroll */
+}
+
+footer {
+    color: white; /* Texto blanco en el pie de página */
+    background-color: #0b0c10; /* Fondo oscuro */
+    font-size: 0.9rem; /* Tamaño de fuente ligeramente reducido */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido del footer */
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../img/fondo.png) 50% 80% no-repeat fixed; 
+        /* Aplica una imagen de fondo posicionada y fija solo en pantallas grandes */
+    }
+}
+
+@media (max-width: 768px) {
+    .megamenu {
+        position: static; /* Cambia a posición estática en pantallas pequeñas */
+        width: 100%; /* Abarca todo el ancho */
+    }
+
+    .header_ {
+        flex-direction: column; /* Organiza el header en columna en lugar de fila */
+        align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Reduce el tamaño de fuente en pantallas pequeñas */
+        flex-direction: column; /* Organiza los elementos del footer en columna */
+    }
+
+    img.icon {
+        width: 35px;
+        height: 35px; /* Reduce el tamaño de los iconos */
+    }
+}

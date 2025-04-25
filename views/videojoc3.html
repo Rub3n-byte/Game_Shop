@@ -1,0 +1,222 @@
+<!DOCTYPE html> <!-- Define el tipo de documento: HTML5 -->
+<html lang="es"> <!-- Define el idioma principal de la página: español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres: UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escalado responsivo para móviles -->
+    <title>EA FC25 - Nintendo Switch 2</title> <!-- Título de la pestaña del navegador -->
+
+    <!-- Enlaces a hojas de estilo personalizadas -->
+    <link rel="stylesheet" href="../css/style.videojoc.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+    <!-- Icono favicon de la pestaña -->
+    <link rel="icon" type="image/png" href="../img/logo/favicon.png">
+
+    <!-- Bootstrap CSS para estilos rápidos y responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Fuente personalizada importada localmente -->
+    <style>
+        @font-face {
+            font-family: 'Cruyff Sans Light';
+            src: url('../fonts/CruyffSans-Light/CruyffSans-Light.ttf') format('truetype');
+        }
+
+        /* Aplicación de la fuente personalizada */
+        h1, h2 {
+            font-family: 'Cruyff Sans Light';
+            font-weight: bold;
+        }
+        p {
+            font-family: "Cruyff Sans Light";
+        }
+
+        /* Estilos responsivos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+                flex-direction: column;
+            }
+
+            .header h1 {
+                font-size: 100px;
+            }
+
+            .header p {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado principal -->
+    <header>
+        <!-- Navegación superior -->
+        <div class="header_">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+                <!-- Logo con enlace a la página principal -->
+                <a class="navbar-brand" href="../index.html">
+                    <img class="icon" src="../img/logo/favicon.png" alt="Logo GameStore">
+                </a>
+                <!-- Botón para mostrar menú en dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav megamenu">
+                        <!-- Enlaces a otros videojuegos -->
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc1.html">Zelda Tears of the Kingdom</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc2.html">Mario Kart 8</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc3.html">EA FC25</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc4.html">Call of Duty 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc5.html">GTA 6</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Información principal del juego -->
+        <div class="header fifa">
+            <h1 style="color: #FAFAFA;">EA FC25</h1>
+            <p>Géneros: Deportes / Fútbol / Multijugador</p>
+
+            <!-- Iconos de plataformas donde se puede jugar -->
+            <div class="platforma">
+                <div class="platform-icon">
+                    <a href="https://store.steampowered.com/app/2669320?utm_source=eaweb&utm_campaign=reveal&utm_medium=web"><img src="../img/logo/steam.png" alt="steam"></a>
+                </div>
+                <div class="platform-icon">
+                    <a href="https://store.playstation.com/es-es/product/EP0006-PPSA20050_00-25STANDARDBUNDLE/"><img src="../img/logo/ps5.png" alt="PlayStation 5"></a>
+                </div>
+                <div class="platform-icon">
+                    <a href="https://www.xbox.com/games/store/ea-sports-fc-25-standard-edition-xbox-one-xbox-series-x-s/9mvk78mgd737"><img src="../img/logo/xseries.png" alt="xbox"></a>
+                </div>
+            </div>
+
+            <!-- Información de edad y botón de compra -->
+            <div class="info">
+              <div class="badge_">+3</div>
+              <a href="https://www.ea.com/es/games/ea-sports-fc/fc-25" class="btn_">Comprar</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <!-- Sección introductoria -->
+        <h1>EA FC25 revoluciona el fútbol</h1>
+        <div class="game-imgs">
+            <img src="../img/imagen-EA-FC25.avif" alt="EA FC25">
+        </div>
+
+        <!-- Sección de novedades -->
+        <h1>EA FC25 lo nuevo</h1>
+        <div class="carousel-container">
+            <!-- Flechas de navegación del carrusel -->
+            <button class="arrow left">&#8249;</button>
+
+            <!-- Contenedor de las diapositivas del carrusel -->
+            <div class="carousel-wrapper">
+                <!-- Cada bloque es una diapositiva del carrusel -->
+                <div class="carousel-slide">
+                    <img src="../img/fifa00.avif" alt="Imagen 1">
+                    <div class="carousel-text">
+                        <h2>Rush de 5c5</h2>
+                        <p>Forma equipo en Rush de 5c5: una nueva forma de jugar al fútbol urbano con tus amistades.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="../img/fifa01.avif" alt="Imagen 2">
+                    <div class="carousel-text">
+                        <h2>FC IQ</h2>
+                        <p>La actualización de los fundamentos tácticos del juego ofrece un mayor control estratégico.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="../img/fifa02.avif" alt="Imagen 3">
+                    <div class="carousel-text">
+                        <h2>Football Ultimate Team</h2>
+                        <p>Juega en equipo y vive una experiencia única en cada partido.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="../img/fifa03.avif" alt="Imagen 4">
+                    <div class="carousel-text">
+                        <h2>Carrera de mánager y Carrera de futbolista</h2>
+                        <p>Disfruta de una experiencia auténtica y reescribe la historia del fútbol.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flecha derecha del carrusel -->
+            <button class="arrow right">&#8250;</button>
+
+            <!-- Indicadores del carrusel -->
+            <div class="carousel-indicators">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+        </div>
+
+        <!-- Sección de copas/ligas representadas en el juego -->
+        <h1>Todas las copas</h1>
+        <div class="galeria">
+            <!-- Cada celda representa una liga -->
+            <div class="celda">
+                <div class="contenido">
+                    <img src="../img/PL.jpeg" alt="Placeholder 1">
+                    <div class="texto"><p>EA SPORTS FC™ 25 es el único lugar donde se puede disfrutar de la liga más popular del mundo...</p></div>
+                </div>
+            </div>
+            <div class="celda">
+                <div class="contenido">
+                    <img src="../img/LaLiga.jpeg" alt="Placeholder 3">
+                    <div class="texto"><p>Juega con las mejores estrellas de los 20 clubes de LALIGA EA SPORTS...</p></div>
+                </div>
+            </div>
+            <div class="celda">
+                <div class="contenido">
+                    <img src="../img/bundesliga.jpeg" alt="Placeholder 4">
+                    <div class="texto"><a>EA SPORTS FC™ 25 es el único lugar donde puedes jugar con los 18 clubes de la Bundesliga...</a></div>
+                </div>
+            </div>
+            <div class="celda">
+                <div class="contenido">
+                    <img src="../img/ligue1.jpeg" alt="Placeholder 5">
+                    <div class="texto"><a>EA SPORTS FC™ 25 te ofrece toda la acción, autenticidad y emoción del fútbol francés...</a></div>
+                </div>
+            </div>
+            <div class="celda">
+                <div class="contenido">
+                    <img src="../img/seriea.jpeg" alt="Placeholder 6">
+                    <div class="texto"><a>Gracias a una colaboración exclusiva entre EA SPORTS y Lega Serie A...</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de video promocional -->
+        <h1>Trailer oficial de EA FC25</h1>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/pBM2xyco_Kg?si=lZshosApIGuA0DbR" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Scripts del carrusel personalizado y de Bootstrap -->
+    <script src="../javascript/carrousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Footer / pie de página -->
+    <footer>
+        <p>&copy; 2025 Game Shop - Todos los derechos reservados</p>
+    </footer>   
+</body>
+</html>

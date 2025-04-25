@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Se declara el idioma del documento como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define cómo se comporta el diseño en dispositivos móviles -->
+    <title>Mario Kart 8 - Nintendo Switch 2</title> <!-- Título de la página -->
+    <link rel="icon" type="image/png" href="../img/logo/favicon.png"> <!-- Icono de la pestaña en el navegador -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Enlace a Bootstrap para estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Conexión anticipada con Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Conexión anticipada con Google Fonts (con permiso de CORS) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"> <!-- Enlace para la fuente 'Orbitron' de Google Fonts -->
+    <link rel="stylesheet" href="../css/style.videojoc.css"> <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../css/header.css"> <!-- Enlace a los estilos del encabezado -->
+    <style>
+        /* Estilo específico para los títulos */
+        h1, h2 {
+            font-family: 'Orbitron'; /* Fuente Orbitron */
+            font-weight: 400; /* Peso de la fuente */
+        }
+
+        /* Estilos para pantallas pequeñas (máximo 768px de ancho) */
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px; /* Ajuste de padding */
+                flex-direction: column; /* Disposición en columna de los elementos */
+            }
+
+            .header h1 {
+                font-size: 55px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+            }
+
+            .header p {
+                font-size: 32px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+                color: black; /* Color del texto */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="header_">
+            <!-- Barra de navegación -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+                <a class="navbar-brand" href="../index.html"><img class="icon" src="../img/logo/favicon.png" alt="Logo GameStore"></a> <!-- Logo de la tienda -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span> <!-- Icono para dispositivos móviles -->
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav megamenu">
+                        <!-- Menú de navegación -->
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc1.html">Zelda Tears of the Kingdom</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc2.html">Mario Kart 8</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc3.html">EA FC25</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc4.html">Call of Duty 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../views/videojoc5.html">GTA 6</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Encabezado con imagen de Mario Kart 8 -->
+        <div class="header mario">
+            <h1>Mario Kart 8 Deluxe</h1> <!-- Título del juego -->
+            <p>Géneros: Carreras / Multijugador / Arcade</p> <!-- Descripción del juego -->
+            <div class="platforma">
+                <!-- Enlace a la página oficial de Nintendo para comprar el juego -->
+                <div class="platform-icon">
+                    <a href="https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html"><img src="../img/logo/ns1.png" alt="Switch2"></a>
+                </div>
+            </div>
+            <div class="info">
+                <!-- Distintivo de edad +3 y botón de compra -->
+                <div class="badge_">+3</div>
+                <a href="https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/Mario-Kart-8-Deluxe-1173281.html" class="btn_">Comprar</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <div class="container">
+        <h1>Mario Kart 8 Deluxe</h1> <!-- Título principal -->
+        <div class="game-imgs">
+            <!-- Imagen del juego -->
+            <img src="../img/imagen-mariokart8.avif" alt="Mario Kart 8 Deluxe">
+        </div>
+        <p>
+            Mario Kart 8 Deluxe es un juego de carreras de la saga Mario Kart, lanzado mundialmente para Nintendo Switch el 28 de abril de 2017. Se trata de una versión mejorada de Mario Kart 8 para Wii U y el primer juego de Super Mario lanzado para Nintendo Switch. El juego base incluye contenido adicional, como varios personajes nuevos y un modo Batalla renovado con nuevos circuitos y modos. Presentado por primera vez en el vídeo de presentación de Nintendo Switch el 20 de octubre de 2016, el juego se anunció oficialmente durante la presentación de Nintendo Switch el 13 de enero de 2017. Se convertiría en el juego de Super Mario más vendido de todos los tiempos.
+
+            El texto anterior proviene de Super Mario Wiki y está disponible bajo una licencia Creative Commons. La atribución debe proporcionarse mediante una lista de autores o un enlace al artículo original.
+        </p>
+
+        <h2>Tráiler oficial de Mario Kart 8 Deluxe</h2> <!-- Subtítulo para el tráiler -->
+        <div class="video-container">
+            <!-- Video incrustado del tráiler de YouTube -->
+            <iframe src="https://www.youtube.com/embed/N_Hw_M5ENCQ?si=ltGunydGJZ_qvsTY" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Inclusión de scripts necesarios para el funcionamiento de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Pie de página con derechos de autor -->
+    <footer>
+        <p>&copy; 2025 Game Shop - Todos los derechos reservados</p>
+    </footer>   
+</body>
+</html>
