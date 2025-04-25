@@ -1,75 +1,75 @@
-
-/* Contenedor flexible que contiene las tarjetas - ahora ajustado a ancho completo y 600px de altura */
+/* Contenedor flexible que contiene las tarjetas - ajustado a ancho completo y 600px de altura */
 .container_ {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 600px;    /* Nuevo: establece la altura a 600px */
-  }
-  
-  /* Estilos base para cada tarjeta */
-  .container_ > div {
-    width: 33%;
-    height: 70%;
-    background-color: #323232;
-    border-radius: 8px;
-    box-shadow: 1px 5px 15px #1e0e3e;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-  }
-  
-  /* Efecto hover: Escalar la tarjeta al 125% y traerla por encima de otras */
-  .container_ > div:hover {
-    transform: scale(1.25);
-    z-index: 10;
-  }
-  
-  /* Imágenes de fondo */
-  .campaign {
-    background: url("../img/cam1.jpeg") no-repeat center/cover;
-  }
-  .multiplayer {
+    display: flex; /* Uso de flexbox para organizar las tarjetas de forma flexible */
+    justify-content: center; /* Centra horizontalmente las tarjetas dentro del contenedor */
+    align-items: center; /* Centra verticalmente las tarjetas dentro del contenedor */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: 600px; /* Altura fija del contenedor */
+}
+
+/* Estilos base para cada tarjeta */
+.container_ > div {
+    width: 33%; /* Cada tarjeta ocupa un tercio del ancho del contenedor */
+    height: 70%; /* Cada tarjeta tiene el 70% de la altura del contenedor */
+    background-color: #323232; /* Fondo gris oscuro para las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 1px 5px 15px #1e0e3e; /* Sombra ligera para darle un efecto elevado */
+    position: relative; /* Posición relativa para manejar contenido interno */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde de las tarjetas */
+    transition: transform 0.5s ease; /* Suaviza la transformación al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor para indicar que la tarjeta es interactiva */
+}
+
+/* Efecto hover: Escala la tarjeta al 125% y la trae al frente */
+.container_ > div:hover {
+    transform: scale(1.25); /* Aumenta el tamaño de la tarjeta al pasar el cursor */
+    z-index: 10; /* Coloca la tarjeta por encima de las demás */
+}
+
+/* Imágenes de fondo para las tarjetas específicas */
+.campaign {
+    background: url("../img/cam1.jpeg") no-repeat center/cover; /* Imagen ajustada al tamaño de la tarjeta */
+}
+.multiplayer {
     background: url("../img/mp1.jpeg") no-repeat center/cover;
-  }
-  .zombies {
+}
+.zombies {
     background: url("../img/zom1.jpg") no-repeat center/cover;
-  }
-  
-  /* Estilo del contenido dentro de cada tarjeta */
-  .content {
-    padding: 15px;
-    color: #fff;
-  }
-  
-  /* Título siempre visible */
-  .content h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Párrafo oculto inicialmente */
-  .content p {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-  
-  /* Al pasar el cursor, revelar el párrafo */
-  .container_ > div:hover .content p {
-    opacity: 1;
-  }
-  
-  .extra-contents div {
-    display: none;  /* Hidden until a card is clicked */
-    background: #222;
-    color: #fff;
-    border-radius: 8px;
-    width: 100%;
-    padding: 20px;
-    margin: 20px;
-  }
+}
+
+/* Estilo del contenido interno de las tarjetas */
+.content {
+    padding: 15px; /* Espaciado interno para separar el contenido del borde */
+    color: #fff; /* Texto en color blanco */
+}
+
+/* Título del contenido (siempre visible) */
+.content h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 1.8rem; /* Tamaño más grande para destacar el título */
+    margin-bottom: 0.5rem; /* Separación inferior entre el título y el párrafo */
+}
+
+/* Párrafo (oculto inicialmente) */
+.content p {
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease; /* Transición suave al mostrar el párrafo */
+    text-align: center; /* Alineado centrado para el texto */
+    margin-top: 0.5rem; /* Espaciado superior con respecto al título */
+}
+
+/* Mostrar el párrafo al pasar el cursor sobre la tarjeta */
+.container_ > div:hover .content p {
+    opacity: 1; /* El párrafo se hace visible */
+}
+
+/* Contenido adicional (oculto por defecto hasta que se haga clic en una tarjeta) */
+.extra-contents div {
+    display: none; /* Oculto por defecto */
+    background: #222; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Espaciado externo para separar de otros elementos */
+}

@@ -1,131 +1,122 @@
 /* Contenedor del carrusel (configuración original) */
 .carousel-container {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    height: 600px;
-    overflow: hidden;
-  }
-  
-  /* Contenedor del carrusel (divs posicionados dentro) */
-  .carousel-wrapper {
-    position: relative;
-    width: 100%;
-  }
-  
-  /* Estilo base para todas los divs */
-  .carousel-slide {
-    position: absolute;
-    margin-top: 5%;
-    top: 0;
-    opacity: 0; /* Ocultar por defecto, cambia si es activo, anterior o siguiente */
-    transition: all 0.5s ease-out;
-  }
-  
-  /* Div anterior, a la izquierda */
-  .carousel-slide.previous {
-    background-color: #323232;
-    color: #FAFAFA;
-    left: 0;
-    width: 16%; /* Ocupa el 20% de la pantalla, a la izquierda, reducido a 16% por el espacio */
-    opacity: 1;
-    z-index: 1; /* Para que este debajo del activo */
-    transform: scale(1);
-  }
-  
-  /* Div activo, en el centro */
-  .carousel-slide.active {
-    background-color: #323232;
-    color: #FAFAFA;
-    left: 26%; /* Para centrar el div */
-    width: 48%; /* Porque es el activo */
-    opacity: 1;
-    z-index: 2; /* Para que esté por encima de los demás */
-    transform: scale(1.25); /* Aumentar el tamaño del div porque esta activo (ver js) */
-    transform-origin: center; /* Para que el aumento sea desde el centro */
-  }
-  
-  /* Div siguiente, a la derecha */
-  .carousel-slide.next {
-    background-color: #323232;
-    color: #FAFAFA;
-    right: 0%;
-    width: 16%;
-    opacity: 1;
-    z-index: 1; /* Para que este debajo del activo */
-    transform: scale(1);
-  }
-  
-  /* Ocultar cualquier diapositiva que no sea anterior, activa o siguiente */
-  .carousel-slide:not(.active):not(.previous):not(.next) {
-    opacity: 0; /* Ocultar los divs que no esten activo, anteriores o siguientes, para rendundar */
-  }
-  
-  .carousel-slide img {
-    width: 100%;
-    max-height: 312px;
-    border-radius: 10px;
-  }
-  
-  /* Incrementar el tamaño del texto (aproximadamente 125%) */
-  .carousel-slide.active .carousel-text {
-    font-size: 1.25em; 
-  }
-  
-  /* Indicadores de div activo */
-  .carousel-indicators {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    display: flex;
-    gap: 8px;
-  }
-  
-  /* Estilo de los puntos indicadores */
-  .dot {
-    width: 12px;
-    height: 12px;
-    background: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .dot.active {
-    background: #717171;
-  }
-  
-  /* Flechas de navegación */
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    width: 40px;
+    position: relative; /* Posiciona al contenedor para poder manejar elementos absolutos dentro de él */
+    height: 600px; /* Altura fija del carrusel */
+    overflow: hidden; /* Oculta el contenido que exceda del contenedor */
+}
+
+/* Contenedor del carrusel (envoltura para las diapositivas) */
+.carousel-wrapper {
+    position: relative; /* Permite a los elementos hijos ser posicionados dentro de este contenedor */
+    width: 100%; /* Abarca todo el ancho del contenedor */
+}
+
+/* Estilo base para todas las diapositivas */
+.carousel-slide {
+    position: absolute; /* Se posiciona dentro del contenedor relativo */
+    margin-top: 5%; /* Añade un margen superior relativo al alto del carrusel */
+    opacity: 0; /* Por defecto, están ocultas */
+    transition: all 0.5s ease-out; /* Animación suave al cambiar estado */
+}
+
+/* Diapositiva anterior, posicionada a la izquierda */
+.carousel-slide.previous {
+    left: 0; /* Se coloca al lado izquierdo del contenedor */
+    width: 16%; /* Ocupa el 16% del ancho del contenedor, dándole un tamaño reducido */
+    opacity: 1; /* Es visible */
+    z-index: 1; /* Tiene menor prioridad que la diapositiva activa */
+    transform: scale(1); /* Mantiene su tamaño base */
+}
+
+/* Diapositiva activa, ubicada en el centro */
+.carousel-slide.active {
+    left: 26%; /* Centra la diapositiva activa en el carrusel */
+    width: 48%; /* Ocupa el 48% del ancho del carrusel, destacándose por su tamaño */
+    opacity: 1; /* Es completamente visible */
+    z-index: 2; /* Tiene la mayor prioridad para superponerse */
+    transform: scale(1.25); /* Aumenta ligeramente su tamaño */
+    transform-origin: center; /* El cambio de tamaño comienza desde el centro */
+}
+
+/* Diapositiva siguiente, posicionada a la derecha */
+.carousel-slide.next {
+    right: 0; /* Ubicada en el lado derecho del contenedor */
+    width: 16%; /* Igual tamaño que la diapositiva anterior */
+    opacity: 1; /* Es visible */
+    z-index: 1; /* Tiene menor prioridad que la diapositiva activa */
+    transform: scale(1); /* Mantiene su tamaño base */
+}
+
+/* Ocultar todas las diapositivas que no sean anterior, activa o siguiente */
+.carousel-slide:not(.active):not(.previous):not(.next) {
+    opacity: 0; /* Se asegura de que todas las demás diapositivas estén ocultas */
+}
+
+/* Estilo para las imágenes dentro de las diapositivas */
+.carousel-slide img {
+    max-height: 312px; /* Limita la altura máxima de las imágenes */
+    border-radius: 10px; /* Bordes redondeados para suavizar el diseño */
+}
+
+/* Incrementar el tamaño del texto cuando la diapositiva está activa */
+.carousel-slide.active .carousel-text {
+    font-size: 1.25em; /* Aumenta el tamaño de la fuente en un 25% */
+}
+
+/* Contenedor para los indicadores (puntos) */
+.carousel-indicators {
+    position: absolute; /* Se posiciona dentro del carrusel */
+    bottom: 20px; /* Espaciado desde el fondo */
+    left: 50%; /* Centra los indicadores en el carrusel */
+    display: flex; /* Coloca los puntos en línea */
+    gap: 8px; /* Añade espacio entre cada punto */
+}
+
+/* Estilo base para los puntos indicadores */
+.dot {
+    width: 12px; /* Tamaño circular pequeño */
+    height: 12px; /* Igual que el ancho para que sea un círculo */
+    background: #bbb; /* Color gris claro */
+    border-radius: 50%; /* Forma completamente circular */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el punto */
+}
+
+/* Cambiar el color del punto activo */
+.dot.active {
+    background: #717171; /* Color gris oscuro para destacar el punto activo */
+}
+
+/* Estilo para las flechas de navegación */
+.arrow {
+    position: absolute; /* Posiciona las flechas sobre el carrusel */
+    top: 50%; /* Centra verticalmente las flechas */
+    transform: translateY(-50%); /* Ajusta para que el centro de la flecha esté alineado */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Color blanco para el texto (flecha) */
+    border-radius: 50%; /* Hacerlas circulares */
+    width: 40px; /* Tamaño de la flecha */
     height: 40px;
-    font-size: 20px;
-    z-index: 3;
-  }
-  
-  .arrow.left {
-    left: 10px;
-  }
-  
-  .arrow.right {
-    right: 10px;
-  }
-  
-  .arrow:hover {
-    background-color: #333;
-  }
-  
-  /* Contenedor externo: define la vista del carrusel */
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    overflow: visible;  /* Permitir que las tarjetas ampliadas se superpongan */
-    padding: 20px 0;    /* Opcional: agrega espacio arriba y abajo */
-  }
+    font-size: 20px; /* Tamaño del texto dentro de la flecha */
+    z-index: 3; /* Para que estén por encima del contenido del carrusel */
+}
+
+/* Flecha izquierda */
+.arrow.left {
+    left: 10px; /* Ubicada a la izquierda del contenedor */
+}
+
+/* Flecha derecha */
+.arrow.right {
+    right: 10px; /* Ubicada a la derecha del contenedor */
+}
+
+/* Hover sobre flechas: cambio de color para dar feedback al usuario */
+.arrow:hover {
+    background-color: #333; /* Fondo gris oscuro al pasar sobre ellas */
+}
+
+/* Contenedor externo del carrusel */
+.container {
+    overflow: visible; /* Permitir que las tarjetas o diapositivas ampliadas se muestren fuera del contenedor */
+    padding: 20px 0; /* Añade un espaciado vertical para mejorar la vista general */
+}

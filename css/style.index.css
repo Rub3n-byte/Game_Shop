@@ -1,53 +1,64 @@
+/* Configuración base del cuerpo del documento */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif; /* Fuente sans-serif moderna y limpia para todo el contenido */
+  background-color: #f4f4f4; /* Fondo gris claro para un contraste suave */
 }
 
+/* Sección hero (banner principal) */
 .hero {
-  background-image: linear-gradient(135deg, #0b0c10, #1f2833);
+  background-image: linear-gradient(135deg, #0b0c10, #1f2833); /* Gradiente diagonal de colores oscuros para un diseño atractivo */
 }
 
+/* Estilo para los títulos de las tarjetas */
 .card-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', sans-serif; /* Fuente futurista para destacar los títulos */
 }
 
+/* Estilo del overlay en las imágenes de las tarjetas */
 .card-img-overlay {
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /* Efecto de desenfoque para el fondo detrás del texto */
 }
 
+/* Botón de información */
 .btn-info {
-  background-color: #66fcf1;
-  border: none;
-  color: #0b0c10;
+  background-color: #66fcf1; /* Color de fondo azul claro distintivo */
+  border: none; /* Sin borde para un diseño limpio */
+  color: #0b0c10; /* Texto oscuro para un contraste claro */
 }
 
+/* Efecto hover en el botón de información */
 .btn-info:hover {
-  background-color: #d9eeed;
+  background-color: #d9eeed; /* Cambia a un tono más claro al pasar el cursor */
 }
 
+/* Estilo del pie de página */
 footer {
-  background-color: #0b0c10;
-  font-size: 0.9rem;
+  background-color: #0b0c10; /* Fondo oscuro para contraste con el texto */
+  font-size: 0.9rem; /* Tamaño ligeramente reducido para el texto del pie de página */
 }
 
 @media (max-width: 768px) {
+  /* Ajustes del hero (banner principal) en pantallas pequeñas */
   .hero {
-    padding: 3rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 3rem 1.5rem; /* Reduce el espaciado interno para ajustarse al tamaño de pantalla */
+    font-size: 0.95rem; /* Disminuye ligeramente el tamaño del texto */
   }
 
+  /* Ajustes del overlay en las imágenes de las tarjetas */
   .card-img-overlay {
-    padding: 0.75rem;
+    padding: 0.75rem; /* Reduce el espaciado interno en dispositivos pequeños */
   }
 
+  /* Botón de información en pantallas pequeñas */
   .btn-info {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1rem; /* Reduce el relleno interno del botón */
+    font-size: 0.9rem; /* Disminuye el tamaño de la fuente */
   }
 
+  /* Pie de página en dispositivos pequeños */
   footer {
-    font-size: 0.8rem;
-    flex-direction: column;
-    padding: 1.2rem 1rem;
+    font-size: 0.8rem; /* Reduce el tamaño del texto para ajustarse a pantallas pequeñas */
+    flex-direction: column; /* Cambia el diseño a una sola columna */
+    padding: 1.2rem 1rem; /* Ajusta el espaciado interno del pie de página */
   }
 }

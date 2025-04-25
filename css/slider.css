@@ -1,58 +1,59 @@
-/* Cosas de comparación del zelda */
+/* Contenedor principal para la comparación de imágenes */
 .container-com {
-    position: relative;
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
+    position: relative; /* Posiciona a los elementos hijos dentro del contenedor relativo */
+    height: 800px; /* Altura fija para establecer un área de comparación consistente */
+    overflow: hidden; /* Oculta cualquier contenido que exceda del contenedor */
 }
 
-/* Contenedor de imágenes */
+/* Contenedor que mantiene ambas imágenes */
 .image-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: absolute; /* Permite superponer las imágenes dentro del contenedor relativo */
+    width: 100%; /* Las imágenes abarcan el ancho completo del contenedor */
+    height: 100%; /* Las imágenes abarcan la altura completa del contenedor */
 }
 
+/* Configuración base para todas las imágenes dentro del slider */
 .slider-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: absolute; /* Asegura que las imágenes se posicionen correctamente una sobre otra */
+    width: 100%; /* Cada imagen se ajusta al ancho completo del contenedor */
+    height: 100%; /* Cada imagen se ajusta a la altura completa del contenedor */
 }
 
+/* Modifica la imagen que se encuentra "después" (imagen derecha en la comparación) */
 .image-after {
-    clip-path: inset(0 50% 0 0);
+    clip-path: inset(0 50% 0 0); /* Muestra solo la mitad izquierda de la imagen (corta el resto) */
 }
 
-/* Input Slider (invisible pero funcional) */
+/* Control deslizante (invisible pero funcional para interacción) */
 .slider {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+    position: absolute; /* Se superpone sobre las imágenes */
+    width: 100%; /* Abarca el ancho completo del contenedor */
+    height: 100%; /* Abarca la altura completa del contenedor */
+    opacity: 0; /* Es invisible pero funcional para detectar interacciones del usuario */
 }
 
-/* Línea del slider */
+/* Línea vertical del slider que separa las imágenes */
 .slider-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%; /* Centrado al inicio */
-    width: 4px;
-    background-color: #fff;
-    z-index: 5;
+    position: absolute; /* Permite posicionarla dentro del contenedor relativo */
+    top: 0; /* Se alinea con la parte superior del contenedor */
+    bottom: 0; /* Se extiende hasta la parte inferior del contenedor */
+    left: 50%; /* Inicia centrada al cargar la página (50% del contenedor) */
+    width: 4px; /* Grosor de la línea que separa las imágenes */
+    background-color: #fff; /* Color blanco para destacar sobre los fondos */
+    z-index: 5; /* Se asegura de que quede visible encima de las imágenes */
 }
 
-/* Bolita del slider (manejador visual) */
+/* Manejador visual del slider (bolita que se arrastra) */
 .slider-handle {
-    position: absolute;
-    top: 50%;
-    left: 50%; /* Centrado al inicio */
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: #000;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    cursor: grab;
-    z-index: 10;
+    position: absolute; /* Posicionada en la línea del slider */
+    top: 50%; /* Centrada verticalmente dentro del contenedor */
+    left: 50%; /* Comienza centrada horizontalmente en la línea del slider */
+    transform: translate(-50%, -50%); /* Ajusta su posición para que el centro de la bolita coincida con el cursor */
+    width: 20px; /* Tamaño de la bolita */
+    height: 20px; /* Igual al ancho para mantenerla circular */
+    background: #000; /* Fondo negro para que contraste con el fondo */
+    border: 2px solid #fff; /* Borde blanco para un diseño visual claro */
+    border-radius: 50%; /* Completamente redondeada */
+    cursor: grab; /* Cambia el cursor al modo de arrastre para indicar su funcionalidad */
+    z-index: 10; /* Se asegura de que esté encima de todos los elementos */
 }

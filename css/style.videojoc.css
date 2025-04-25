@@ -1,34 +1,34 @@
-@import url(carrousel.css);
-@import url(slider.css);
-@import url(cod-modos.css);
-@import url(tabla-hover.css);
-@import url(responsive.css);
+@import url(carrousel.css); /* Importa estilos para el carrusel */
+@import url(slider.css); /* Importa estilos para el slider */
+@import url(cod-modos.css); /* Importa estilos específicos para modos de juego */
+@import url(tabla-hover.css); /* Importa estilos para tablas con efecto hover */
+@import url(responsive.css); /* Importa estilos para el diseño responsivo */
 
-/* styles.css */
+/* Estilo general para el cuerpo y el documento HTML */
 body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    font-family: Arial, sans-serif; /* Fuente básica y legible */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina los paddings predeterminados */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: 100%; /* Asegura que ocupe todo el alto disponible */
 }
 
+/* Encabezado flexible */
 .header {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
+    display: flex; /* Uso de flexbox para organizar elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si exceden el ancho */
+    flex-direction: column; /* Organiza los elementos en una sola columna */
+    align-content: center; /* Centra el contenido dentro del flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
-/* Header, de las imagenes de los juegos */
-
+/* Estilos específicos para los encabezados de los juegos */
 .header.zelda {
-    background: url("../img/zelda-fondo.png") no-repeat center center fixed;
-    background-size: cover;
-    padding: 90px 40px;
-    text-align: center;
-    height: 100vh;
+    background: url("../img/zelda-fondo.png") no-repeat center center fixed; /* Fondo específico con una imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño completo del contenedor */
+    padding: 90px 40px; /* Espaciado interno amplio */
+    text-align: center; /* Centra el texto dentro del encabezado */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
 }
 
 .header.mario {
@@ -63,141 +63,156 @@ body, html {
     height: 100vh;
 }
 
-/* Configuracion general */
+/* Configuración general para el texto dentro del encabezado */
+.header h1 {
+    font-size: 72px; /* Tamaño grande para destacar el título */
+    margin-bottom: 10px; /* Espaciado inferior para separar del párrafo */
+    font-weight: bold; /* Título en negrita para mayor énfasis */
+}
 
-  .header h1 {
-    font-size: 72px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
+.header p {
+    font-size: 36px; /* Tamaño más pequeño para subtítulos o descripciones */
+    color: grey; /* Color gris claro para contraste con el fondo */
+    font-weight: bold; /* Texto en negrita para mayor legibilidad */
+}
 
-  .header p {
-    font-size: 36px;
-    color: grey;
-    font-weight: bold;
-  }
+/* Contenedor para la información adicional */
+.info {
+    margin-top: 30px; /* Espaciado superior para separar del contenido anterior */
+    display: flex; /* Uso de flexbox para organizar elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 30px; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si exceden el ancho */
+}
 
-  .info {
+/* Íconos de plataformas dentro del header */
+.platforma {
     margin-top: 30px;
-    display: flex;
+    display: flex; /* Uso de flexbox para organizar elementos */
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  .platforma {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    gap: 30px; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si exceden el ancho */
+}
 
-  }
-  .platform-icon {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-  }
+.platform-icon {
+    width: 150px; /* Tamaño fijo para los íconos de las plataformas */
+    height: auto; /* Ajusta automáticamente la altura según el ancho */
+    border-radius: 50%; /* Bordes completamente redondeados para los íconos */
+}
 
-  h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-  }
+/* Configuración general para los títulos secundarios */
+h2 {
+    margin-bottom: 20px; /* Espaciado inferior para separar del contenido siguiente */
+    font-size: 28px; /* Tamaño moderado para destacar el título secundario */
+}
 
-  iframe {
-    border: none;
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    border-radius: 16px;
-    display: flex;
+/* Estilo para los iframes de videos */
+iframe {
+    border: none; /* Elimina el borde del iframe */
+    width: 100%; /* Ajusta el ancho al contenedor */
+    max-width: 800px; /* Limita el ancho máximo del iframe */
+    height: 500px; /* Altura fija del iframe */
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Sombra ligera para destacar el iframe */
+    border-radius: 16px; /* Bordes redondeados para suavizar el diseño */
+    display: flex; /* Uso de flexbox para organizar el contenido */
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .badge_, .platform_, .btn_ {
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-  }
+/* Botones personalizados */
+.badge_, .platform_, .btn_ {
+    padding: 10px 20px; /* Espaciado interno para el botón */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita dentro del botón */
+}
 
-  .badge_ {
-    background: orange;
-    color: #fff;
-  }
+/* Estilo específico para el badge (indicador de edad mínima) */
+.badge_ {
+    background: orange; /* Fondo naranja para destacar */
+    color: #fff; /* Texto en blanco para contraste */
+}
 
-  .platform_ {
-    background: #008cba;
-    color: #fff;
-  }
+/* Estilo específico para los botones de plataforma */
+.platform_ {
+    background: #008cba; /* Fondo azul claro */
+    color: #fff; /* Texto en blanco */
+}
 
-  .btn_ {
-    background: #e91e63;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s;
-    text-decoration: none;
-  }
+/* Estilo para botones principales */
+.btn_ {
+    background: #e91e63; /* Fondo rosa fuerte */
+    color: white; /* Texto en blanco */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background 0.3s; /* Animación suave al cambiar el fondo */
+    text-decoration: none; /* Elimina subrayado del texto */
+}
 
 .btn_:hover {
-    background: #c2185b;
-  }
+    background: #c2185b; /* Cambia a un tono más oscuro al pasar el cursor */
+}
 
-
+/* Estilo para las imágenes en el contenedor de juegos */
 div.game-imgs img {
-    width: 90%;
-    height: auto;
+    width: 90%; /* Ocupa el 90% del ancho disponible */
+    height: auto; /* Ajusta automáticamente la altura según el ancho */
 }
 
+/* Contenedor principal para los juegos */
 .container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    display: grid;
-    background-color: #222;
-    color: #fff;
+    width: 90%; /* Ocupa el 90% del ancho disponible */
+    max-width: 800px; /* Limita el ancho máximo a 800px */
+    margin: 20px auto; /* Centra el contenedor y añade separación vertical */
+    background: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno para separar el contenido del borde */
+    border-radius: 8px; /* Bordes redondeados */
+    display: grid; /* Usa grid para organizar el contenido */
+    background-color: #222; /* Fondo gris oscuro */
+    color: #fff; /* Texto en color blanco */
 }
+
+/* Texto dentro del contenedor principal */
 div.container > p {
     text-justify: auto;
-    text-align: justify;
+    text-align: justify; /* Alinea el texto de manera justificada */
     margin: 0;
     padding: 0;
 }
 
+/* Contenedor para los videos */
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+    display: flex; /* Uso de flexbox para organizar contenido */
+    justify-content: center; /* Centra los videos horizontalmente */
+    align-items: center; /* Centra los videos verticalmente */
+    margin: 20px 0; /* Añade separación vertical entre videos y otros contenidos */
 }
 
+/* Estilo general para las imágenes */
 img {
-    max-width: 100%;
-    border-radius: 8px;
+    max-width: 100%; /* Ajusta el ancho máximo al contenedor */
+    border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
 }
 
+/* Contenedor de imágenes en la sección de juegos */
 .game-imgs {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin: 20px 0;
+    display: flex; /* Uso de flexbox para organizar las imágenes */
+    gap: 10px; /* Espaciado entre imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin: 20px 0; /* Añade separación vertical entre imágenes y otros contenidos */
 }
 
+/* Estilo para las imágenes dentro del contenedor de juegos */
 .game-imgs img {
-    width: 50%;
+    width: 50%; /* Cada imagen ocupa la mitad del ancho del contenedor */
 }
 
 .video {
-    background: #ccc;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    margin: 20px 0;
-    border-radius: 8px;
-    color: #333;
+  background: #ccc; /* Fondo gris claro */
+  height: 200px; /* Altura fija del contenedor de video */
+  text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
+  line-height: 200px; /* Centra el texto verticalmente dentro del contenedor */
+  margin: 20px 0; /* Añade separación vertical con otros contenidos */
+  border-radius: 8px; /* Bordes redondeados para suavizar el diseño */
+  color: #333; /* Texto en color gris oscuro */
 }
 
 a {

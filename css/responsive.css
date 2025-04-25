@@ -1,147 +1,173 @@
 @media (max-width: 768px) {
+    /* Ajustes para el encabezado en dispositivos pequeños */
     .header {
-      padding: 40px 20px;
-      flex-direction: column;
-      flex-wrap: nowrap;
+        padding: 40px 20px; /* Espaciado interno para ajustar el diseño */
+        flex-direction: column; /* Cambia la disposición a una columna */
+        flex-wrap: nowrap; /* Evita que los elementos se ajusten en varias filas */
     }
-  
+
+    /* Íconos de plataformas dentro del header */
     .platform-icon {
-      width: 100px;
+        width: 100px; /* Tamaño fijo para los íconos en pantallas pequeñas */
     }
-  
+
+    /* Contenedor principal */
     .container {
-      padding: 10px;
-      width: 95%;
+        padding: 10px; /* Reduce el espaciado interno */
+        width: 95%; /* Ocupa el 95% del ancho disponible */
     }
-  
+
+    /* Contenedor flexible y sus tarjetas internas */
     .container_,
     .container_ > div {
-      flex-direction: column;
-      height: auto;
-      width: 100%;
+        flex-direction: column; /* Cambia la disposición a una columna */
+        height: auto; /* Ajusta la altura automáticamente según el contenido */
+        width: 100%; /* Ocupa todo el ancho del contenedor */
     }
-  
+
+    /* Ajustes específicos para cada tarjeta */
     .container_ > div {
-      width: 100%;
-      margin: 10px auto;
-      transform: none !important;
+        width: 100%; /* Cada tarjeta ocupa todo el ancho disponible */
+        margin: 10px auto; /* Centra las tarjetas y añade separación vertical */
+        transform: none !important; /* Desactiva cualquier transformación previa */
     }
-  
+
+    /* Descripciones dentro de las tarjetas */
     .content p {
-      opacity: 1; /* Mostrar descripción siempre en móvil */
+        opacity: 1; /* Muestra siempre las descripciones en pantallas pequeñas */
     }
-  
+
+    /* Estilo para los iframes */
     iframe {
-      height: 300px;
+        height: 300px; /* Altura fija para los iframes en móviles */
     }
-  
+
+    /* Contenedor de videos */
     .video {
-      height: 150px;
-      line-height: 150px;
+        height: 150px; /* Altura específica para videos */
+        line-height: 150px; /* Centra el contenido verticalmente */
     }
-  
+
+    /* Ajustes para iframes dentro de contenedores de videos */
     .video-container iframe {
-      max-width: 100%;
-      height: auto;
+        max-width: 100%; /* Ajusta el ancho máximo al contenedor */
+        height: auto; /* Ajusta la altura automáticamente según el contenido */
     }
-  
+
+    /* Ajustes para el contenedor de imágenes en dispositivos pequeños */
     .game-imgs {
-      flex-direction: column;
-      gap: 10px;
+        flex-direction: column; /* Cambia la disposición a una columna */
+        gap: 10px; /* Añade espacio entre imágenes */
     }
-  
+
+    /* Ajustes para las imágenes dentro del contenedor */
     .game-imgs img {
-      width: 100%;
+        width: 100%; /* Cada imagen ocupa todo el ancho disponible */
     }
-  
+
+    /* Configuración para tablas de imágenes en pantallas pequeñas */
     .tabla-imagenes {
-      grid-template-columns: 1fr;
-      gap: 15px;
+        grid-template-columns: 1fr; /* Cada fila contiene una sola columna */
+        gap: 15px; /* Espaciado entre elementos */
     }
-  
+
+    /* Ajustes para las celdas dentro de tablas de imágenes */
     .celda {
-      flex: 1 1 100%;
-      max-width: 100%;
+        flex: 1 1 100%; /* Ocupa todo el ancho disponible */
+        max-width: 100%; /* Limita el ancho máximo al contenedor */
     }
-  
+
+    /* Configuración para imágenes dentro del contenido */
     .contenido img {
-      object-fit: contain;
+        object-fit: contain; /* Ajusta la imagen para que sea completamente visible */
     }
-  
+
+    /* Ajustes para el contenedor del carrusel */
     .carousel-container {
-      height: auto;
+        height: auto; /* Ajusta automáticamente la altura según el contenido */
     }
-  
+
+    /* Configuración para las diapositivas del carrusel */
     .carousel-slide {
-      position: relative;
-      opacity: 1;
-      width: 100%;
-      transform: none !important;
-      margin: 20px 0;
+        position: relative; /* Cambia a posición relativa en móviles */
+        opacity: 1; /* Todas las diapositivas son visibles */
+        width: 100%; /* Cada diapositiva ocupa todo el ancho disponible */
+        transform: none !important; /* Desactiva cualquier transformación previa */
+        margin: 20px 0; /* Añade separación vertical entre diapositivas */
     }
-  
+
+    /* Oculta diapositivas que no sean activas, anteriores o siguientes */
     .carousel-slide:not(.active):not(.previous):not(.next) {
-      display: none;
+        display: none; /* Diapositivas no relevantes se ocultan completamente */
     }
-  
+
+    /* Ajustes para la diapositiva activa */
     .carousel-slide.active {
-      left: 0;
-      width: 100%;
+        left: 0; /* Centra la diapositiva activa horizontalmente */
+        width: 100%; /* Ocupa todo el ancho disponible */
     }
-  
+
+    /* Oculta diapositivas anteriores y siguientes */
     .carousel-slide.previous,
     .carousel-slide.next {
-      display: none;
+        display: none; /* Estas diapositivas no se muestran en móviles */
     }
-  
+
+    /* Configuración para imágenes dentro de las diapositivas */
     .carousel-slide img {
-      max-height: 200px;
+        max-height: 200px; /* Limita la altura máxima de las imágenes */
     }
-  
+
+    /* Indicadores del carrusel (puntos) */
     .carousel-indicators {
-      flex-wrap: wrap;
-      gap: 4px;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
+        flex-wrap: wrap; /* Permite que los puntos se ajusten en varias filas */
+        gap: 4px; /* Espaciado entre los puntos */
+        bottom: 10px; /* Posiciona los puntos cerca del fondo */
+        left: 50%; /* Centra horizontalmente los puntos */
+        transform: translateX(-50%); /* Ajusta para centrar el contenido completamente */
     }
-  
+
+    /* Ajustes para el texto en diapositivas activas */
     .carousel-slide.active .carousel-text {
-      font-size: 1rem;
+        font-size: 1rem; /* Reduce el tamaño del texto en móviles */
     }
-  
+
+    /* Flechas de navegación en el carrusel */
     .arrow {
-      width: 30px;
-      height: 30px;
-      font-size: 16px;
+        width: 30px; /* Reduce el tamaño de las flechas */
+        height: 30px; /* Igual al ancho para mantener la forma circular */
+        font-size: 16px; /* Tamaño más pequeño para el texto dentro de las flechas */
     }
-  
+
+    /* Ajustes para el manejador visual del slider */
     .slider-handle {
-      width: 16px;
-      height: 16px;
+        width: 16px; /* Reduce el tamaño del manejador en móviles */
+        height: 16px; /* Igual al ancho para mantener la forma circular */
     }
-  
+
+    /* Línea del slider */
     .slider-line {
-      width: 2px;
+        width: 2px; /* Grosor reducido para la línea en móviles */
     }
-  
+
+    /* Botones y elementos destacados */
     .btn_,
     .badge_,
     .platform_ {
-      padding: 8px 12px;
-      font-size: 0.9rem;
+        padding: 8px 12px; /* Ajusta el espaciado interno para elementos pequeños */
+        font-size: 0.9rem; /* Reduce el tamaño de fuente en móviles */
     }
-  
+
+    /* Galería de imágenes */
     .galeria {
-      flex-direction: column;
-      flex-wrap: nowrap;
-      height: 1400px;
-  
+        flex-direction: column; /* Cambia la disposición a una columna */
+        flex-wrap: nowrap; /* Evita que los elementos se ajusten en varias filas */
+        height: 1400px; /* Altura específica para la galería en móviles */
     }
-  
+
+    /* Contenidos adicionales en móviles */
     .extra-contents div {
-      width: 90%;
-      margin: 10px auto;
+        width: 90%; /* Reduce el ancho del contenido adicional */
+        margin: 10px auto; /* Centra el contenido y añade separación vertical */
     }
-  }
-  
+}
