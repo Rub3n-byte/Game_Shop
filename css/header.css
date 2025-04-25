@@ -26,3 +26,6 @@ footer {
     align-items: center;
     justify-content: center;
 }
+body {
+    background: url(../img/fondo.jpeg) no-repeat center center fixed;
+}
