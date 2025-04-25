@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración básica de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTA VI - Nintendo Switch 2</title>
+
+    <!-- Hojas de estilo externas -->
     <link rel="stylesheet" href="../css/style.videojoc.css">
     <link rel="stylesheet" href="../css/header.css">
+
+    <!-- Ícono de la página -->
     <link rel="icon" type="image/png" href="../img/logo/favicon.png">
+
+    <!-- Framework CSS de Bootstrap para diseño moderno y responsivo -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuentes externas de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Encabezado principal -->
     <header>
         <div class="header_">
+            <!-- Barra de navegación -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-                <a class="navbar-brand" href="../index.html"><img class="icon" src="../img/logo/favicon.png" alt="Logo GameStore"></a>
+                <!-- Logo y enlace a la página principal -->
+                <a class="navbar-brand" href="../index.html">
+                    <img class="icon" src="../img/logo/favicon.png" alt="Logo GameStore">
+                </a>
+                <!-- Botón para abrir el menú desplegable en dispositivos pequeños -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- Enlaces del menú de navegación -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav megamenu">
+                        <!-- Enlaces a páginas de otros juegos -->
                         <li class="nav-item"><a class="nav-link" href="../views/videojoc1.html">Zelda Tears of the Kingdom</a></li>
                         <li class="nav-item"><a class="nav-link" href="../views/videojoc2.html">Mario Kart 8</a></li>
                         <li class="nav-item"><a class="nav-link" href="../views/videojoc3.html">EA FC25</a></li>
@@ -29,41 +46,68 @@
                 </div>
             </nav>
         </div>
+        <!-- Contenido principal del encabezado -->
         <div class="header gta">
             <h1>Grand Theft Auto VI</h1>
             <p>Géneros: Acción / Mundo Abierto / Crimen</p>
             <div class="platforma">
+                <!-- Íconos de plataformas disponibles -->
                 <div class="platform-icon">
                     <img src="../img/xboxS.png" alt="Xbox Series">
                 </div>
                 <div class="platform-icon">
                     <img src="../img/ps5.png" alt="PlayStation 5">
-              </div>
-              <div class="platform-icon">
+                </div>
+                <div class="platform-icon">
                     <img src="../img/sw2.png" alt="Switch2">
                 </div>
             </div>
             <div class="info">
-              <div class="badge_">+18</div>
-              <a class="btn_" href="https://www.rockstargames.com/VI">Reservar</a>
+                <!-- Clasificación de edad -->
+                <div class="badge_">+18</div>
+                <!-- Botón para reservar el juego -->
+                <a class="btn_" href="https://www.rockstargames.com/VI">Reservar</a>
             </div>
         </div>
     </header>
 
+    <!-- Contenedor principal con información del juego -->
     <div class="container">
         <h1>GTA VI: La Revolución del Mundo Abierto</h1>
+        <!-- Imagen destacada del juego -->
         <div class="game-imgs">
             <img src="../img/imagen-gta.jpeg" alt="GTA VI">
         </div>
-        <p>Grand Theft Auto VI es la última entrega de la icónica saga de Rockstar Games. Con un mundo abierto más grande y detallado que nunca, los jugadores podrán explorar ciudades vibrantes y paisajes impresionantes. La narrativa profunda y los personajes memorables prometen una experiencia inmersiva.</p>
-        <p>La jugabilidad se ha mejorado con nuevas mecánicas, como la personalización de vehículos y un sistema de misiones dinámico. Además, el modo multijugador ofrece una experiencia cooperativa sin precedentes.</p>
+        <!-- Descripción del juego -->
+        <p>
+            Grand Theft Auto VI es la última entrega de la icónica saga de Rockstar Games. Con un mundo abierto más grande y detallado que nunca, 
+            los jugadores podrán explorar ciudades vibrantes y paisajes impresionantes. La narrativa profunda y los personajes memorables prometen 
+            una experiencia inmersiva.
+        </p>
+        <p>
+            La jugabilidad se ha mejorado con nuevas mecánicas, como la personalización de vehículos y un sistema de misiones dinámico. Además, 
+            el modo multijugador ofrece una experiencia cooperativa sin precedentes.
+        </p>
+        <!-- Tráiler del juego -->
         <h2>Trailer de GTA 6</h2>
-        <iframe src="https://www.youtube.com/embed/QdBZY2fkU-0?si=p1kvk4UsMJiiWKgp" title="GTA VI Trailer" frameborder="0" allowfullscreen></iframe>
-        <p>El tráiler de GTA VI ha dejado a los fans ansiosos por más, mostrando gráficos impresionantes y una jugabilidad fluida. La fecha de lanzamiento está programada para el 15 de diciembre de 2025, y se espera que sea uno de los lanzamientos más esperados del año.</p>
+        <iframe 
+            src="https://www.youtube.com/embed/QdBZY2fkU-0?si=p1kvk4UsMJiiWKgp" 
+            title="GTA VI Trailer" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+        <p>
+            El tráiler de GTA VI ha dejado a los fans ansiosos por más, mostrando gráficos impresionantes y una jugabilidad fluida. 
+            La fecha de lanzamiento está programada para el 15 de diciembre de 2025, y se espera que sea uno de los lanzamientos más esperados del año.
+        </p>
     </div>
+
+    <!-- Scripts necesarios para la funcionalidad -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Pie de página -->
     <footer>
         <p>&copy; 2025 Game Shop - Todos los derechos reservados</p>
     </footer>  
