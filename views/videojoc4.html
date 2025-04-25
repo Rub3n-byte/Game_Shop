@@ -1,78 +1,45 @@
 <!DOCTYPE html>
-<!-- Define que este es un documento HTML5 -->
-
 <html lang="es">
-<!-- El idioma principal del documento es español -->
-
 <head>
     <meta charset="UTF-8">
-    <!-- Codificación de caracteres en UTF-8, compatible con la mayoría de caracteres -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Permite el diseño responsive, adaptándose al ancho del dispositivo -->
-
     <title>Call of Duty®: Black Ops II</title>
-    <!-- Título que aparece en la pestaña del navegador -->
-
-    <!-- Enlaces a hojas de estilo personalizadas -->
     <link rel="stylesheet" href="../css/style.videojoc.css">
     <link rel="stylesheet" href="../css/header.css">
-
-    <!-- Ícono del sitio (favicon) -->
     <link rel="icon" type="image/png" href="../img/logo/favicon.png">
-
-    <!-- Bootstrap CDN para estilos responsivos y componentes predefinidos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Fuentes personalizadas desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
-
-    <!-- Estilos internos -->
     <style>
         @font-face {
             font-family: 'Call of Ops Duty II';
             src: url("../fonts/Call_of_Ops_Duty_II/Call\ of\ Ops\ Duty\ II.otf") format('opentype');
         }
-
         h1, h2, h3, h4 {
             font-family: 'Call of Ops Duty II';
             color: #F45F00;
         }
-
         p {
             font-family: "Call of Ops Duty II";
             color: #FAFAFA;
         }
-
         .container {
             width: 100%;
             margin: 0 auto;
-            overflow: visible;
+            overflow: visible; /* permite que se sobreponga */
             font-size: 120%;
         }
     </style>
 </head>
-
 <body>
-    <!-- INICIO DEL HEADER -->
     <header>
         <div class="header_">
-            <!-- Barra de navegación con Bootstrap -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-                <!-- Logo que redirige al inicio -->
-                <a class="navbar-brand" href="../index.html">
-                    <img class="icon" src="../img/logo/favicon.png" alt="Logo GameStore">
-                </a>
-
-                <!-- Botón de hamburguesa para móviles -->
+                <a class="navbar-brand" href="../index.html"><img class="icon" src="../img/logo/favicon.png" alt="Logo GameStore"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Enlaces del menú -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav megamenu">
-                        <!-- Enlaces a las distintas páginas de videojuegos -->
                         <li class="nav-item"><a class="nav-link" href="../views/videojoc1.html">Zelda Tears of the Kingdom</a></li>
                         <li class="nav-item"><a class="nav-link" href="../views/videojoc2.html">Mario Kart 8</a></li>
                         <li class="nav-item"><a class="nav-link" href="../views/videojoc3.html">EA FC25</a></li>
@@ -82,135 +49,117 @@
                 </div>
             </nav>
         </div>
-
-        <!-- Cabecera con título, géneros y plataformas -->
         <div class="header cod">
             <h1>Call of Duty: Black Ops II</h1>
             <p>Géneros: Shooter / Guerra / Acción táctica</p>
-
-            <!-- Iconos de plataformas -->
             <div class="platforma">
                 <div class="platform-icon">
-                    <a href="https://www.xbox.com/..."><img src="../img/logo/x360.png" alt="Xbox360"></a>
+                    <a href="https://www.xbox.com/es-mx/games/store/Call-of-Duty-Black-Ops-II/C1QJM5XT9SXV?msockid=0cf8466f074d6cff27aa53ae06046de9"><img src="../img/logo/x360.png" alt="Xbox360"></a>
                 </div>
                 <div class="platform-icon">
-                    <a href="https://www.game.es/..."><img src="../img/logo/ps3.png" alt="PlayStation 3"></a>
+                    <a href="https://www.game.es/call-of-duty-black-ops-ii-playstation-3-088844"><img src="../img/logo/ps3.png" alt="PlayStation 3"></a>
                 </div>
                 <div class="platform-icon">
-                    <a href="https://store.steampowered.com/..."><img src="../img/logo/steam.png" alt="PC"></a>
+                    <a href="https://store.steampowered.com/app/202970/Call_of_Duty_Black_Ops_II/"><img src="../img/logo/steam.png" alt="PC"></a>
                 </div>
             </div>
-
-            <!-- Botón de compra y clasificación -->
             <div class="info">
-                <div class="badge_">+18</div>
-                <a class="btn_" href="https://store.steampowered.com/...">Comprar</a>
+              <div class="badge_">+18</div>
+              <a class="btn_" href="https://store.steampowered.com/app/202970/Call_of_Duty_Black_Ops_II/">Comprar</a>
             </div>
         </div>
     </header>
-
-    <!-- CONTENIDO PRINCIPAL -->
     <div class="container">
-        <h1>Call of Duty Black Ops 2</h1>
-        <p>Descripción general del juego.</p>
-
-        <h2>Un juego que marcó una época</h2>
-        <p>Explicación de por qué fue tan relevante en su momento.</p>
-
-        <!-- Secciones organizadas en contenedores -->
-        <div class="container_">
-
-            <!-- CAMPAÑA -->
-            <div class="campaign">
-                <div class="content">
-                    <h2>La campaña</h2>
-                    <p>Descripción narrativa de la historia del juego, con personajes y contexto histórico-futurista.</p>
-                </div>
-            </div>
-
-            <!-- MULTIJUGADOR -->
-            <div class="multiplayer">
-                <div class="content">
-                    <h2>Multijugador</h2>
-                    <p>Características del modo multijugador competitivo.</p>
-                </div>
-            </div>
-
-            <!-- ZOMBIS -->
-            <div class="zombies">
-                <div class="content">
-                    <h2>Modo Zombis</h2>
-                    <p>Información sobre el modo Zombis, sus mapas, historia y mecánicas.</p>
-                </div>
-            </div>
+      <h1>Call of Duty Black Ops 2</h1>
+      <p>Call of Duty: Black Ops II es un shooter en primera persona desarrollado por Treyarch y publicado por Activision para PlayStation 3, Xbox 360, Nintendo Wii U y PC. La secuela de una de las entregas más populares de la saga, un juego de acción con una espectacular y rejugable campaña para un jugador ambientada en 1986 y 2025, un frenético multijugador competitivo y el divertido modo Zombis cooperativo.</p>
+      <h2>Un juego que marcó una época</h2>
+      <p>Call of Duty: Black Ops II es un juego que marcó un antes y un después en la saga de Call of Duty. Con su innovador sistema de decisiones, los jugadores podían influir en el desarrollo de la historia, lo que lo hacía único en su época. Además, su multijugador competitivo y el modo Zombis ofrecían horas de diversión.</p>
+      <div class="container_">
+        <div class="campaign">
+          <div class="content">
+            <h2>La campaña</h2>
+            <p>La historia, protagonizada por Alex Mason y Frank Woods se ambienta en dos marcos temporales: a finales de los 80, en conflictos de la Guerra Fría en lugares como América Central y Afganistán, y en 2025, controlando a David Mason, el hijo de Alex, mientras lucha contra una nueva amenaza terrorista liderada por el carismático villano Raúl Menéndez, en un futuro con tecnología y armamento futurista con drones y robots. La campaña, muy rejugable con decisiones y varios finales, cuenta con algunas innovaciones como las misiones Strike Force, unas misiones secundarias con elementos de estrategia, controlando torretas, vehículos aéreos, soldados o drones cuadrúpedos.</p>
+          </div>
         </div>
+        <div class="multiplayer">
+          <div class="content">
+            <h2>Multijugador</h2>
+            <p>El multijugador de Black Ops II es uno de los más queridos por los fans. Con una amplia variedad de mapas, modos de juego y personalización de armas, ofrece una experiencia competitiva intensa. Además, el sistema de creación de clases permite a los jugadores adaptar su estilo de juego a sus preferencias.</p>
+          </div>
+        </div>
+        <div class="zombies">
+          <div class="content">
+            <h2>Modo Zombis</h2>
+            <p>El modo Zombis de Black Ops II es uno de los más populares de la saga. Con mapas únicos, personajes icónicos y una jugabilidad adictiva, los jugadores deben sobrevivir a hordas de zombis mientras completan objetivos y desbloquean secretos. La historia del modo Zombis se entrelaza con la campaña principal, ofreciendo una experiencia completa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="extra-contents">
+        <div class="cam_2">
+          <h2>La campaña</h2>
+          <p>La historia, protagonizada por Alex Mason y Frank Woods, se ambienta en dos marcos temporales: a finales de los 80, en conflictos de la Guerra Fría en lugares como América Central y Afganistán, y en 2025, controlando a David Mason, el hijo de Alex, mientras lucha contra una nueva amenaza terrorista liderada por el carismático villano Raúl Menéndez. Este futuro incluye tecnología avanzada, con armamento como drones y robots de combate.</p>
+          
+          <p>La campaña es altamente rejugable, ofreciendo decisiones que afectan el curso de la historia y múltiples finales. Entre sus innovaciones se encuentran las misiones Strike Force, que añaden un componente estratégico al juego, permitiendo el control de torretas, vehículos aéreos, soldados y drones cuadrúpedos.</p>
+          
+          <h3>Un nuevo tipo de guerra</h3>
+          <p>A medida que avanza la historia de 2025, el juego muestra un mundo marcado por la guerra cibernética y el bloqueo tecnológico, donde los países utilizan sanciones y ataques digitales como armas. Estas mecánicas reflejan conflictos modernos, mostrando cómo las guerras han evolucionado más allá del enfrentamiento directo en el campo de batalla.</p>
+          
+          <h2>¿Una premonición?</h2>
+          <iframe src="https://www.youtube.com/embed/Xmq-C5uIPmQ?si=1ULqoCAQLl_ds5Dz"></iframe>
+          <h3>La Guerra Fría en el juego</h3>
+          <p>La campaña de <i>Black Ops II</i> se desarrolla en dos líneas temporales: los años 80, con misiones clásicas de la Guerra Fría, y el año 2025, donde una nueva confrontación entre Estados Unidos y China surge en un contexto dominado por la tecnología. En este futuro, la guerra no solo involucra soldados, sino también ciberataques y sanciones comerciales. Un ataque informático atribuido falsamente a EE.UU. paraliza los sistemas chinos, lo que lleva a China a cortar el suministro de tierras raras, minerales esenciales para fabricar baterías, armas y microchips.</p>
+          
+          <h3>La Guerra Fría en la realidad</h3>
+          <p>Hoy en día, la rivalidad entre Estados Unidos y China ha evolucionado hacia una guerra fría tecnológica y económica. La disputa por el control de las tierras raras es un punto clave: China domina la producción de estos minerales y ha impuesto restricciones a su exportación, afectando la industria tecnológica global. Además, el enfrentamiento se extiende a sectores como la inteligencia artificial, los semiconductores y las redes 5G.</p>
+        </div>
+        <div class="mp_2">
+          <h2>Multijugador</h2>
 
-        <!-- CONTENIDO DETALLADO ADICIONAL -->
-        <div class="extra-contents">
+          <h3>Rachas de bajas</h3>
+          <p>El sistema de rachas de bajas en <i>Black Ops II</i> permite a los jugadores ganar ventajas estratégicas al mantener una racha de eliminaciones. Estas rachas se dividen en tres categorías: letales, tácticas y de apoyo. Desde los clásicos UAV y paquetes de ayuda hasta el letal enjambre de drones, los jugadores pueden cambiar el rumbo de la batalla si logran activarlas.</p>
+          
+          <h3>Personalización de armas</h3>
+          <p>El juego introduce un sistema avanzado de personalización de armas mediante el sistema "Pick 10", permitiendo a los jugadores modificar sus equipamientos con accesorios, ventajas y modificaciones tácticas. Se pueden eliminar elementos innecesarios para potenciar las habilidades individuales, ofreciendo una experiencia de combate única.</p>
+          
+          <h3>Mapas icónicos</h3>
+          <p><i>Black Ops II</i> presentó algunos de los mapas más memorables de la saga. <b>Hijacked</b>, un yate de lujo convertido en campo de batalla, ofrece combates frenéticos en espacios cerrados. <b>Nuketown 2025</b>, una versión futurista del clásico mapa, mantiene su caos característico. Otros mapas como <b>Standoff</b> y <b>Raid</b> brindan terrenos tácticos con múltiples estrategias posibles.</p>
+          <div class="mapas">
+            <img src="../img/mp2.jpeg" alt="Mapa de Black Ops II">
+            <img src="../img/mp3.jpeg" alt="Mapa de Black Ops II">
+            <img src="../img/mp4.jpeg" alt="Mapa de Black Ops II">
+            <img src="../img/mp5.jpeg" alt="Mapa de Black Ops II">
+          </div>
+        </div>
+        <div class="zom_2">
+          <h2>Modo Zombis</h2>
 
-            <!-- CAMPAÑA DETALLADA -->
-            <div class="cam_2">
-                <h2>La campaña</h2>
-                <p>Más detalles sobre las mecánicas, misiones y contexto político del juego.</p>
-                <h3>Un nuevo tipo de guerra</h3>
-                <p>Guerras tecnológicas y modernas representadas en el juego.</p>
-                <h2>¿Una premonición?</h2>
-                <iframe src="https://www.youtube.com/embed/Xmq-C5uIPmQ?..."></iframe>
-                <h3>La Guerra Fría en el juego</h3>
-                <p>Conexión de la historia ficticia con sucesos reales.</p>
-                <h3>La Guerra Fría en la realidad</h3>
-                <p>Comparación con la rivalidad tecnológica actual entre EE.UU. y China.</p>
-            </div>
-
-            <!-- MULTIJUGADOR DETALLADO -->
-            <div class="mp_2">
-                <h2>Multijugador</h2>
-                <h3>Rachas de bajas</h3>
-                <p>Explicación de cómo funcionan las rachas en el juego.</p>
-                <h3>Personalización de armas</h3>
-                <p>Descripción del sistema Pick 10 y personalización avanzada.</p>
-                <h3>Mapas icónicos</h3>
-                <p>Mapas más conocidos del juego con imágenes representativas.</p>
-                <div class="mapas">
-                    <img src="../img/mp2.jpeg" alt="Mapa de Black Ops II">
-                    <img src="../img/mp3.jpeg" alt="Mapa de Black Ops II">
-                    <img src="../img/mp4.jpeg" alt="Mapa de Black Ops II">
-                    <img src="../img/mp5.jpeg" alt="Mapa de Black Ops II">
-                </div>
-            </div>
-
-            <!-- MODO ZOMBIS DETALLADO -->
-            <div class="zom_2">
-                <h2>Modo Zombis</h2>
-                <h3>La nueva historia</h3>
-
-                <h4>Tranzit</h4>
-                <p>Descripción del mapa y sus mecánicas.</p>
-                <iframe src="https://www.youtube.com/embed/aFuzHJeKWWk?..."></iframe>
-
-                <h4>Buried</h4>
-                <p>Ambientación del mapa y mecánicas exclusivas.</p>
-                <iframe src="https://www.youtube.com/embed/BwU7FR0uaaY"></iframe>
-
-                <h3>La vieja historia</h3>
-                <h4>Origins</h4>
-                <p>Mapa basado en la Primera Guerra Mundial, con armas elementales.</p>
-
-                <h4>Mob of the Dead</h4>
-                <p>Ambientado en Alcatraz, historia oscura y mecánicas nuevas.</p>
-                <iframe src="https://www.youtube.com/embed/lpG7vEOlbIc?..."></iframe>
-            </div>
+          <h3>La nueva historia</h3>
+          
+          <h4>Tranzit</h4>
+          <p>Uno de los mapas más ambiciosos del modo Zombis. Los jugadores deben viajar entre diferentes zonas usando un autobús, enfrentándose a hordas implacables mientras exploran áreas ocultas. Tranzit introduce mecánicas únicas como la construcción de objetos y la activación de secretos que profundizan en la historia de la amenaza zombi.</p>
+          <p>El mapa está dividido en cinco áreas principales: la estación de autobuses, la granja, la central eléctrica, la ciudad y el túnel. Cada una de estas zonas contiene elementos clave para la supervivencia, como armas, mejoras y secretos ocultos. Además, los jugadores pueden construir el escudo antidisturbios y la turbina, herramientas esenciales para desbloquear nuevas áreas.</p>
+          <iframe src="https://www.youtube.com/embed/aFuzHJeKWWk?si=JD7LBgwheXClZomt"></iframe>
+          
+          <h4>Buried</h4>
+          <p>Ubicado en una ciudad subterránea del Viejo Oeste, Buried ofrece una experiencia única con un entorno claustrofóbico y mecánicas innovadoras. Los jugadores pueden interactuar con un personaje gigante llamado "Arthur", quien ayuda a despejar obstáculos y derrotar zombis. Además, el mapa introduce nuevas armas y elementos estratégicos.</p>
+          <p>Buried también cuenta con la presencia de los "Ghosts", enemigos que aparecen en la mansión y pueden drenar los puntos de los jugadores si los tocan. Para contrarrestar estos peligros, los jugadores pueden utilizar el banco para almacenar puntos y la caja de armas para guardar equipamiento entre partidas.</p>
+          <iframe src="https://www.youtube.com/embed/BwU7FR0uaaY"></iframe>
+          
+          <h3>La vieja historia</h3>
+          
+          <h4>Origins</h4>
+          <p>Este mapa lleva a los jugadores a los campos de batalla de la Primera Guerra Mundial, donde deben enfrentarse a hordas de zombis mientras descubren los secretos de los antiguos guerreros. Origins introduce el sistema de bastones elementales, que permiten a los jugadores usar poderes especiales contra los enemigos. Además, el mapa cuenta con un gigantesco robot que patrulla el área.</p>
+          <p>Los jugadores pueden construir los cuatro bastones elementales: fuego, hielo, viento y electricidad. Cada uno tiene habilidades únicas y puede mejorarse para desbloquear su máximo potencial. Además, el mapa introduce el sistema de desafíos, que permite obtener recompensas adicionales al completar ciertos objetivos.</p>
+          <h4>Mob of the Dead</h4>
+          <p>Ambientado en la prisión de Alcatraz, Mob of the Dead sigue la historia de un grupo de mafiosos atrapados en un ciclo de muerte y resurrección. Los jugadores deben encontrar la manera de escapar de la prisión mientras enfrentan zombis y descubren la oscura historia detrás del mapa. Introduce el modo "Afterlife", que permite a los jugadores interactuar con el entorno de formas únicas.</p>
+          <p>El mapa cuenta con el avión de escape, que los jugadores deben construir para intentar huir de la isla. También introduce la "Blundergat", un arma especial que puede mejorarse en la mesa de trabajo para obtener versiones más poderosas. Además, los jugadores pueden enfrentarse a "Brutus", un enemigo formidable que aparece para reforzar la dificultad del mapa.</p>          
+          <iframe src="https://www.youtube.com/embed/lpG7vEOlbIc?si=lAdsOBl7WxxNhRva"></iframe>
         </div>
     </div>
-
-    <!-- SCRIPTS DE JAVASCRIPT -->
     <script src="../javascript/hide.js"></script>
-    <!-- jQuery y Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-
-    <!-- PIE DE PÁGINA -->
     <footer>
         <p>&copy; 2025 Game Shop - Todos los derechos reservados</p>
     </footer>
