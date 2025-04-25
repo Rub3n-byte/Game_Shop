@@ -37,6 +37,10 @@ footer {
   font-size: 0.9rem; /* Tamaño ligeramente reducido para el texto del pie de página */
 }
 
+body {
+  background: url(../img/fondo.jpeg) no-repeat center center fixed;
+}
+
 @media (max-width: 768px) {
   /* Ajustes del hero (banner principal) en pantallas pequeñas */
   .hero {
